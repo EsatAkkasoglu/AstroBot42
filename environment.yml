@@ -1,0 +1,6 @@
+name: AstroBot
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - discord.py=2.3.2

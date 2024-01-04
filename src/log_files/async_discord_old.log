@@ -1,0 +1,1005 @@
+[32m2023-12-13 17:25:30 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 0.05s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 48\' 14.30"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 3.29 seconds[0m
+[31m2023-12-13 17:27:44 [ERROR]   [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033)
+ ERROR: Embed.set_footer() takes 1 positional argument but 2 were given[0m
+[31m2023-12-13 17:28:21 [ERROR]   [astrobot] > Object Query for ALSKDA by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-13 17:28:35 [ERROR]   [astrobot] > Object Query for RANDOM by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[32m2023-12-13 17:28:47 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 0.69s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 48\' 17.40"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 1.61 seconds[0m
+[31m2023-12-13 17:28:47 [ERROR]   [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[32m2023-12-13 17:30:41 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 1.06s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 48\' 19.20"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 2.80 seconds[0m
+[31m2023-12-13 17:38:00 [ERROR]   [astrobot] > Object Query for ASLDA by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'items'[0m
+[31m2023-12-13 17:38:16 [ERROR]   [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'items'[0m
+[32m2023-12-13 17:38:37 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 2.59s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 48\' 26.50"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 2.59 seconds[0m
+[31m2023-12-13 17:38:37 [ERROR]   [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[32m2023-12-13 17:39:26 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 2.75s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 48\' 27.30"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 2.88 seconds[0m
+[32m2023-12-13 17:42:08 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 3.27s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 48\' 29.80"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 3.21 seconds[0m
+[31m2023-12-13 17:42:26 [ERROR]   [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033)
+ ERROR: Embed.set_footer() takes 1 positional argument but 2 were given[0m
+[32m2023-12-13 18:01:32 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 12.68 seconds[0m
+[32m2023-12-13 18:02:47 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 6.95 seconds[0m
+[32m2023-12-13 18:09:13 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 8.89 seconds[0m
+[31m2023-12-13 18:12:21 [ERROR]   [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-13 18:13:18 [ERROR]   [astrobot] > Object Query for MARS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-13 18:14:04 [ERROR]   [astrobot] > Object Query for MARS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[32m2023-12-13 18:17:20 [INFO]    [astrobot] > Object Query for MARS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '1.524', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '1.382', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '1.666', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0935, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 1.85, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '6.42e+23', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '1.63e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 3.9341, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 3.71, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 5030.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 3389.5, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 3396.19, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 3376.2, 'unit': 'km'}, 'flattening': {'symbol': 'f', 'definition': 'flattening', 'value': 0.00589, 'unit': ''}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '1.88', 'unit': 'years'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '1.03', 'unit': 'days'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 25.19, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '-63.15', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 19.412, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 286.231, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 49.667, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '16h 49m 37.09s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-22° 49\' 29.70"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Ophiuchus', 'unit': ''}}
+Elapsed time: 3.40 seconds[0m
+[32m2023-12-13 18:18:06 [INFO]    [astrobot] > Object Query for MARS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '1.524', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '1.382', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '1.666', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0935, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 1.85, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '6.42e+23', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '1.63e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 3.9341, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 3.71, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 5030.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 3389.5, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 3396.19, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 3376.2, 'unit': 'km'}, 'flattening': {'symbol': 'f', 'definition': 'flattening', 'value': 0.00589, 'unit': ''}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '1.88', 'unit': 'years'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '1.03', 'unit': 'days'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 25.19, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '-63.15', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 19.412, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 286.231, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 49.667, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '16h 49m 37.19s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-22° 49\' 29.90"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Ophiuchus', 'unit': ''}}
+Elapsed time: 3.39 seconds[0m
+[32m2023-12-13 18:19:47 [INFO]    [astrobot] > Object Query for MARS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '1.524', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '1.382', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '1.666', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0935, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 1.85, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '6.42e+23', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '1.63e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 3.9341, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 3.71, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 5030.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 3389.5, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 3396.19, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 3376.2, 'unit': 'km'}, 'flattening': {'symbol': 'f', 'definition': 'flattening', 'value': 0.00589, 'unit': ''}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '1.88', 'unit': 'years'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '1.03', 'unit': 'days'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 25.19, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '-63.15', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 19.412, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 286.231, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 49.667, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '16h 49m 37.40s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-22° 49\' 30.30"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Ophiuchus', 'unit': ''}}
+Elapsed time: 5.12 seconds[0m
+[31m2023-12-13 18:22:05 [ERROR]   [astrobot] > Object Query for CERE by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[32m2023-12-13 18:22:06 [INFO]    [astrobot] > Object Query for CERES by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '2.767', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '2.558', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '2.977', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.07582, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 10.593, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '9.39e+20', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '4.21e+09', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 2.161, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 0.28, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 510.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 476.2, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 487.0, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 455.0, 'unit': 'km'}, 'flattening': {'symbol': 'f', 'definition': 'flattening', 'value': 0.9619, 'unit': ''}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '4.60', 'unit': 'years'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '9.07', 'unit': 'hours'}, 'discoveredBy': {'symbol': '', 'definition': 'discoveredBy', 'value': 'Giuseppe Piazzi', 'unit': ''}, 'discoveryDate': {'symbol': '', 'definition': 'discoveryDate', 'value': '01/01/1801', 'unit': ''}, 'alternativeName': {'symbol': '', 'definition': 'alternativeName', 'value': 'A899 OF - 1943 XB', 'unit': ''}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 3, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '-105.15', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 77.3721, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 73.59769, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 80.30553, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Asteroid', 'unit': ''}}
+Elapsed time: 0.83 seconds[0m
+[32m2023-12-13 18:23:24 [INFO]    [astrobot] > Object Query for TITAN by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.008', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.008', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.008', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0292, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 0.33, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '1.35e+23', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '0.00e+00', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 1.88, 'unit': 'g/cm³'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 2575.0, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': 15.95, 'unit': 'days'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '2.28', 'unit': 'weeks'}, 'discoveredBy': {'symbol': '', 'definition': 'discoveredBy', 'value': 'Christian Huygens', 'unit': ''}, 'discoveryDate': {'symbol': '', 'definition': 'discoveryDate', 'value': '25/03/1655', 'unit': ''}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Moon', 'unit': ''}}
+Elapsed time: 1.19 seconds[0m
+[31m2023-12-13 18:26:09 [ERROR]   [astrobot] > Object Query for TITAN by esatakkasoglu(278558027160748033)
+ ERROR: Failed to parse SIMBAD result! The raw response can be found in self.last_response, and the error in self.last_table_parse_error. The attempted parsed result is in self.last_parsed_result.
+ Exception: Warning: The script line number 3 raised an error (recorded in the `errors` attribute of the result table): 'titan': No known catalog could be found[0m
+[32m2023-12-13 18:26:45 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.27 seconds[0m
+[31m2023-12-13 18:27:14 [ERROR]   [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033)
+ ERROR: Failed to parse SIMBAD result! The raw response can be found in self.last_response, and the error in self.last_table_parse_error. The attempted parsed result is in self.last_parsed_result.
+ Exception: Warning: The script line number 3 raised an error (recorded in the `errors` attribute of the result table): 'venus': No known catalog could be found[0m
+[32m2023-12-13 18:33:50 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 13.27s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 17.90"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 3.21 seconds[0m
+[32m2023-12-13 18:38:52 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 14.25s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 22.60"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 3.10 seconds[0m
+[32m2023-12-13 18:40:32 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 14.57s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 24.20"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 2.94 seconds[0m
+[31m2023-12-13 18:41:05 [ERROR]   [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033)
+ ERROR: Failed to convert value(s) to axis units: [datetime.datetime(2023, 12, 13, 16, 14, 38, 578122), masked_array(data=--,
+             mask=True,
+       fill_value='?',
+            dtype=object)][0m
+[32m2023-12-13 18:42:00 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 8.23 seconds[0m
+[32m2023-12-13 18:43:02 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 6.87 seconds[0m
+[32m2023-12-13 18:45:11 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 111.31 seconds[0m
+[32m2023-12-13 18:46:26 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.60 seconds[0m
+[31m2023-12-13 18:46:37 [ERROR]   [astrobot] > Object Query for ME AUR by esatakkasoglu(278558027160748033)
+ ERROR: Failed to parse SIMBAD result! The raw response can be found in self.last_response, and the error in self.last_table_parse_error. The attempted parsed result is in self.last_parsed_result.
+ Exception: Warning: The script line number 3 raised an error (recorded in the `errors` attribute of the result table): 'ME aur' this identifier has an incorrect format for catalog: 	V* : Variable stars[0m
+[32m2023-12-13 18:47:06 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 4.02 seconds[0m
+[32m2023-12-13 18:47:24 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 4.61 seconds[0m
+[32m2023-12-13 18:49:39 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 9.79 seconds[0m
+[32m2023-12-13 18:50:42 [INFO]    [astrobot] > Object Query for V402 AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* V402 Aur', 'object_type': 'EclBin', 'SP_type': 'F0', 'ra': '05 02 14.7412', 'dec': '+31 15 49.292', 'mag_U': 9.48, 'mag_B': 9.35, 'mag_V': 8.91, 'mag_G': 8.766744, 'mag_J': 7.904, 'mag_H': 7.774, 'mag_K': 7.685, 'Z_value': 0.000136, 'rvz_radvel': 40.82, 'parallax': 5.1985, 'Fe_H_CompStar': 'SUN'}
+Elapsed time: 20.28 seconds[0m
+[32m2023-12-13 18:50:53 [INFO]    [astrobot] > Object Query for V402 AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* V402 Aur', 'object_type': 'EclBin', 'SP_type': 'F0', 'ra': '05 02 14.7412', 'dec': '+31 15 49.292', 'mag_U': 9.48, 'mag_B': 9.35, 'mag_V': 8.91, 'mag_G': 8.766744, 'mag_J': 7.904, 'mag_H': 7.774, 'mag_K': 7.685, 'Z_value': 0.000136, 'rvz_radvel': 40.82, 'parallax': 5.1985, 'Fe_H_CompStar': 'SUN'}
+Elapsed time: 4.72 seconds[0m
+[32m2023-12-13 18:51:08 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 5.21 seconds[0m
+[32m2023-12-13 18:52:24 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 8.37 seconds[0m
+[32m2023-12-13 18:53:47 [INFO]    [astrobot] > Object Query for V402 AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* V402 Aur', 'object_type': 'EclBin', 'SP_type': 'F0', 'ra': '05 02 14.7412', 'dec': '+31 15 49.292', 'mag_U': 9.48, 'mag_B': 9.35, 'mag_V': 8.91, 'mag_G': 8.766744, 'mag_J': 7.904, 'mag_H': 7.774, 'mag_K': 7.685, 'Z_value': 0.000136, 'rvz_radvel': 40.82, 'parallax': 5.1985, 'Fe_H_CompStar': 'SUN'}
+Elapsed time: 5.40 seconds[0m
+[32m2023-12-13 18:55:54 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 4.28 seconds[0m
+[32m2023-12-13 18:57:44 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 6.84 seconds[0m
+[32m2023-12-13 18:57:52 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.35 seconds[0m
+[32m2023-12-13 19:02:20 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 10.04 seconds[0m
+[32m2023-12-13 19:02:36 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.00 seconds[0m
+[32m2023-12-13 19:03:19 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 11.91 seconds[0m
+[32m2023-12-13 19:03:27 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 4.03 seconds[0m
+[32m2023-12-13 19:04:41 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.28 seconds[0m
+[32m2023-12-13 19:04:49 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.27 seconds[0m
+[32m2023-12-13 19:06:53 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 19.67s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 48.70"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 1.77 seconds[0m
+[32m2023-12-13 19:08:27 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 19.97s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 50.10"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 2.96 seconds[0m
+[32m2023-12-13 19:08:42 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 5.39 seconds[0m
+[32m2023-12-13 19:10:49 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 8.15 seconds[0m
+[32m2023-12-13 19:11:00 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.47 seconds[0m
+[32m2023-12-13 19:11:44 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 20.61s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 53.20"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 1.68 seconds[0m
+[32m2023-12-13 19:13:17 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 20.91s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 54.70"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 2.63 seconds[0m
+[32m2023-12-13 19:13:24 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 20.93s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 54.80"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 1.59 seconds[0m
+[32m2023-12-13 19:15:12 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 21.28s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 56.40"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 2.87 seconds[0m
+[32m2023-12-13 19:15:15 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 21.29s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 49\' 56.50"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 1.53 seconds[0m
+[32m2023-12-13 19:17:03 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 9.15 seconds[0m
+[32m2023-12-13 19:17:08 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.51 seconds[0m
+[32m2023-12-13 19:18:41 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.69 seconds[0m
+[32m2023-12-13 19:18:53 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.71 seconds[0m
+[32m2023-12-13 19:19:53 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.43 seconds[0m
+[32m2023-12-13 19:20:01 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 4.28 seconds[0m
+[32m2023-12-13 19:21:12 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.29 seconds[0m
+[32m2023-12-13 19:21:20 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.42 seconds[0m
+[32m2023-12-13 19:22:53 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.31 seconds[0m
+[32m2023-12-13 19:23:00 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.41 seconds[0m
+[32m2023-12-13 19:27:59 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 35m 23.75s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-12° 50\' 8.30"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 1.70 seconds[0m
+[32m2023-12-13 19:30:33 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.94 seconds[0m
+[32m2023-12-13 19:41:01 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 9.51 seconds[0m
+[32m2023-12-13 19:41:37 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 6.53 seconds[0m
+[32m2023-12-13 19:42:28 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 3.48 seconds[0m
+[32m2023-12-13 19:43:24 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 9.42 seconds[0m
+[32m2023-12-13 19:43:33 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 4.20 seconds[0m
+[32m2023-12-13 19:43:43 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 4.92 seconds[0m
+[32m2023-12-13 19:43:52 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 4.66 seconds[0m
+[32m2023-12-13 19:46:35 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 3.69 seconds[0m
+[32m2023-12-13 19:46:49 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 3.69 seconds[0m
+[32m2023-12-13 19:46:53 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 3.39 seconds[0m
+[32m2023-12-14 07:51:37 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 8.46 seconds[0m
+[32m2023-12-14 07:51:41 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 37m 47.82s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-13° 01\' 38.20"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 12.10 seconds[0m
+[32m2023-12-14 07:52:52 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 8.66 seconds[0m
+[32m2023-12-14 07:52:55 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 37m 48.06s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-13° 01\' 39.40"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 12.02 seconds[0m
+[32m2023-12-14 07:55:15 [INFO]    [astrobot] > Object Query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 18.58 seconds[0m
+[32m2023-12-14 07:55:20 [INFO]    [astrobot] > Object Query for VENUS by esatakkasoglu(278558027160748033) {'semimajorAxis': {'symbol': 'a', 'definition': 'semi-major axis', 'value': '0.723', 'unit': 'AU'}, 'perihelion': {'symbol': 'q', 'definition': 'perihelion', 'value': '0.718', 'unit': 'AU'}, 'aphelion': {'symbol': 'ad', 'definition': 'aphelion', 'value': '0.728', 'unit': 'AU'}, 'eccentricity': {'symbol': 'e', 'definition': 'eccentricity', 'value': 0.0067, 'unit': ''}, 'inclination': {'symbol': 'i', 'definition': 'orbital inclination', 'value': 3.39, 'unit': '°'}, 'mass': {'symbol': 'm', 'definition': 'mass', 'value': '4.87e+24', 'unit': 'kg'}, 'vol': {'symbol': 'V', 'definition': 'volume', 'value': '9.28e+11', 'unit': 'm³'}, 'density': {'symbol': 'ρ', 'definition': 'density', 'value': 5.243, 'unit': 'g/cm³'}, 'gravity': {'symbol': 'g', 'definition': 'surface gravity', 'value': 8.87, 'unit': 'm/s²'}, 'escape': {'symbol': 'v_esc', 'definition': 'escape velocity', 'value': 10360.0, 'unit': 'm/s'}, 'meanRadius': {'symbol': 'R_mean', 'definition': 'mean radius', 'value': 6051.8, 'unit': 'km'}, 'equaRadius': {'symbol': 'R_eq', 'definition': 'equatorial radius', 'value': 6051.8, 'unit': 'km'}, 'polarRadius': {'symbol': 'R_polar', 'definition': 'polar radius', 'value': 6051.8, 'unit': 'km'}, 'sideralOrbit': {'symbol': 'T_sideral_orbit', 'definition': 'sideral orbit period', 'value': '7.49', 'unit': 'months'}, 'sideralRotation': {'symbol': 'T_sideral_rotation', 'definition': 'sideral rotation period', 'value': '8.10', 'unit': 'months'}, 'axialTilt': {'symbol': 'ε', 'definition': 'axial tilt', 'value': 177.36, 'unit': '°'}, 'avgTemp': {'symbol': 'T', 'definition': 'average temperature', 'value': '463.85', 'unit': 'degC'}, 'mainAnomaly': {'symbol': 'M', 'definition': 'mean anomaly', 'value': 50.115, 'unit': '°'}, 'argPeriapsis': {'symbol': 'ω', 'definition': 'argument of perihelion', 'value': 54.78, 'unit': '°'}, 'longAscNode': {'symbol': 'Ω', 'definition': 'longitude of ascending node', 'value': 76.785, 'unit': '°'}, 'bodyType': {'symbol': '', 'definition': 'body type', 'value': 'Planet', 'unit': ''}, 'ra_hms': {'symbol': 'ra', 'definition': 'right ascension', 'value': '14h 37m 48.53s', 'unit': ''}, 'dec_dms': {'symbol': 'dec', 'definition': 'declination', 'value': '-13° 01\' 41.60"', 'unit': ''}, 'constellation': {'symbol': '', 'definition': 'constellation', 'value': 'Libra', 'unit': ''}}
+Elapsed time: 23.84 seconds[0m
+[32m2023-12-14 07:55:30 [INFO]    [astrobot] > Object Query for ALTAIR by esatakkasoglu(278558027160748033) {'Main_name': '* alf Aql', 'IDS_name': 'NAME Altair', 'object_type': 'delSctV*', 'SP_type': 'A7Vn', 'ra': '19 50 46.9985', 'dec': '+08 52 05.956', 'mag_U': 1.07, 'mag_B': 0.98, 'mag_V': 0.76, 'mag_R': 0.62, 'mag_I': 0.49, 'mag_J': 0.35, 'mag_H': 0.24, 'mag_K': 0.24, 'Z_value': -8.9e-05, 'rvz_radvel': -26.6, 'parallax': 194.95, 'Fe_H_Teff': 7377, 'Fe_H_log_g': 3.95, 'Fe_H_Fe_H': 0.48, 'Fe_H_CompStar': 'SUN', 'distance_pc': 5.12952038984355, 'distance_ly': 16.730238522698127}
+Elapsed time: 33.31 seconds[0m
+[32m2023-12-14 07:55:39 [INFO]    [astrobot] > Object Query for EM AUR by esatakkasoglu(278558027160748033) {'Main_name': 'V* EM Aur', 'object_type': 'EclBin', 'SP_type': 'A3', 'ra': '05 13 24.4522', 'dec': '+37 05 59.235', 'mag_B': 11.26, 'mag_V': 10.85, 'mag_G': 10.844107, 'mag_J': 9.803, 'mag_H': 9.624, 'mag_K': 9.543, 'parallax': 1.0044}
+Elapsed time: 42.37 seconds[0m
+[32m2023-12-14 07:55:59 [INFO]    [astrobot] > Object Query for DN CAM by esatakkasoglu(278558027160748033) {'Main_name': 'V* DN Cam', 'object_type': 'SB*', 'SP_type': 'F0', 'ra': '04 42 46.2425', 'dec': '+72 58 41.875', 'mag_B': 8.68, 'mag_V': 8.34, 'mag_G': 8.317781, 'mag_J': 7.548, 'mag_H': 7.394, 'mag_K': 7.358, 'Z_value': 2e-05, 'rvz_radvel': 6.04, 'parallax': 6.3885, 'Fe_H_Teff': 6827}
+Elapsed time: 62.82 seconds[0m
+[32m2023-12-14 07:56:14 [INFO]    [astrobot] > Object Query for TY PUP by esatakkasoglu(278558027160748033) {'Main_name': 'V* TY Pup', 'object_type': 'EclBin', 'SP_type': 'F3V', 'ra': '07 32 46.2312', 'dec': '-20 47 31.079', 'mag_B': 8.99, 'mag_V': 8.6, 'mag_G': 8.592833, 'mag_J': 7.662, 'mag_H': 7.493, 'mag_K': 7.405, 'Z_value': 9.3e-05, 'rvz_radvel': 28.0, 'parallax': 4.5651}
+Elapsed time: 77.69 seconds[0m
+[32m2023-12-14 07:56:27 [INFO]    [astrobot] > Object Query for GZ AND by esatakkasoglu(278558027160748033) {'Main_name': 'V* GZ And', 'object_type': 'EclBin', 'SP_type': 'G5V', 'ra': '02 12 14.0689', 'dec': '+44 39 36.208', 'mag_B': 12.23, 'mag_V': 11.1, 'mag_G': 10.887164, 'parallax': 5.9353}
+Elapsed time: 90.06 seconds[0m
+[32m2023-12-14 07:59:24 [INFO]    [astrobot] > Object Query for HV AQR by esatakkasoglu(278558027160748033) {'Main_name': 'V* HV Aqr', 'object_type': 'EclBin', 'SP_type': 'F5V', 'ra': '21 21 24.8100', 'dec': '-03 09 36.885', 'mag_B': 10.5, 'mag_V': 9.99, 'mag_R': 9.337, 'mag_I': 9.148, 'mag_G': 9.933081, 'mag_J': 8.912, 'mag_H': 8.559, 'mag_K': 8.505, 'Z_value': -1.3e-05, 'rvz_radvel': -3.77, 'parallax': 6.4835, 'Fe_H_Teff': 6742, 'Fe_H_log_g': 4.47}
+Elapsed time: 14.72 seconds[0m
+[32m2023-12-14 07:59:37 [INFO]    [astrobot] > Object Query for CM DRA by esatakkasoglu(278558027160748033) {'Main_name': 'V* CM Dra', 'object_type': 'BYDraV*', 'SP_type': 'M4.5V', 'ra': '16 34 20.3302', 'dec': '+57 09 44.368', 'mag_B': 14.5, 'mag_V': 12.87, 'mag_R': 10.85, 'mag_I': 9.26, 'mag_G': 11.490692, 'mag_J': 8.501, 'mag_H': 8.039, 'mag_K': 7.796, 'Z_value': -0.000394, 'rvz_radvel': -118.24, 'parallax': 67.2876, 'Fe_H_Teff': 3073, 'Fe_H_Fe_H': -0.11, 'Fe_H_CompStar': 'SUN', 'distance_pc': 14.861579250857513, 'distance_ly': 48.47193242142683}
+Elapsed time: 27.31 seconds[0m
+[32m2023-12-14 07:59:48 [INFO]    [astrobot] > Object Query for  OO AQL by esatakkasoglu(278558027160748033) {'Main_name': 'V* OO Aql', 'object_type': 'SB*', 'SP_type': 'F9V', 'ra': '19 48 12.6525', 'dec': '+09 18 32.374', 'mag_B': 10.26, 'mag_V': 9.49, 'mag_R': 8.773, 'mag_I': 8.762, 'mag_G': 9.387402, 'mag_J': 7.943, 'mag_H': 7.625, 'mag_K': 7.503, 'Z_value': -0.000105, 'rvz_radvel': -31.57, 'parallax': 8.5271}
+Elapsed time: 38.65 seconds[0m
+[32m2023-12-14 08:00:00 [INFO]    [astrobot] > Object Query for  AO CAM by esatakkasoglu(278558027160748033) {'Main_name': 'V* AO Cam', 'object_type': 'EclBin', 'SP_type': 'G0V', 'ra': '04 28 13.6471', 'dec': '+53 02 44.463', 'mag_B': 11.23, 'mag_V': 10.51, 'mag_R': 9.071, 'mag_I': 8.674, 'mag_G': 10.406006, 'mag_J': 8.97, 'mag_H': 8.662, 'mag_K': 8.586, 'Z_value': -4.4e-05, 'rvz_radvel': -13.17, 'parallax': 6.7248}
+Elapsed time: 51.04 seconds[0m
+[32m2023-12-14 08:00:14 [INFO]    [astrobot] > Object Query for YY GEM by esatakkasoglu(278558027160748033) {'Main_name': 'V* YY Gem', 'IDS_name': 'NAME Castor C', 'object_type': 'BYDraV*', 'SP_type': 'M0.5VeFe-2', 'ra': '07 34 37.4474', 'dec': '+31 52 10.179', 'mag_U': 11.6, 'mag_B': 10.56, 'mag_V': 9.27, 'mag_R': 7.69, 'mag_I': 6.67, 'mag_G': 8.296116, 'mag_J': 6.073, 'mag_H': 5.42, 'mag_K': 5.236, 'mag_g': 10.387, 'mag_r': 9.219, 'mag_i': 7.981, 'Z_value': 0.000109, 'rvz_radvel': 32.66, 'parallax': 66.311, 'Fe_H_Teff': 3885, 'Fe_H_Fe_H': 0.03, 'Fe_H_CompStar': 'SUN', 'distance_pc': 15.080454223281203, 'distance_ly': 49.18580627648504}
+Elapsed time: 64.22 seconds[0m
+[32m2023-12-14 08:00:26 [INFO]    [astrobot] > Object Query for  GK BOO by esatakkasoglu(278558027160748033) {'Main_name': 'V* GK Boo', 'object_type': 'SB*', 'ra': '14 38 20.6952', 'dec': '+36 32 25.278', 'mag_B': 11.72, 'mag_V': 10.93, 'mag_R': 10.5, 'mag_G': 10.544668, 'mag_J': 9.23, 'mag_H': 8.7, 'mag_K': 8.629, 'parallax': 7.9174, 'Fe_H_CompStar': 'SUN'}
+Elapsed time: 76.78 seconds[0m
+[32m2023-12-14 08:00:40 [INFO]    [astrobot] > Object Query for  CU CNC by esatakkasoglu(278558027160748033) {'Main_name': 'V* CU Cnc', 'object_type': 'SB*', 'SP_type': 'M5Ve', 'ra': '08 31 37.5741', 'dec': '+19 23 39.398', 'mag_B': 12.83, 'mag_V': 11.809, 'mag_R': 11.592, 'mag_G': 10.576141, 'mag_J': 7.509, 'mag_H': 6.894, 'mag_K': 6.603, 'mag_u': 15.513, 'mag_g': 14.856, 'mag_r': 12.793, 'mag_i': 13.328, 'mag_z': 10.381, 'Z_value': -0.000131, 'rvz_radvel': -39.342, 'parallax': 60.0602, 'Fe_H_Teff': 3141, 'distance_pc': 16.64996120559039, 'distance_ly': 54.30484746970539}
+Elapsed time: 90.40 seconds[0m
+[32m2023-12-14 08:00:52 [INFO]    [astrobot] > Object Query for  BS UMA by esatakkasoglu(278558027160748033) {'Main_name': 'V* BS UMa', 'object_type': 'EclBin', 'ra': '11 25 41.6466', 'dec': '+42 34 49.674', 'mag_B': 13.41, 'mag_V': 12.46, 'mag_R': 11.54, 'mag_G': 11.986719, 'mag_J': 9.988, 'mag_H': 9.395, 'mag_K': 9.258, 'parallax': 7.623, 'Fe_H_Teff': 4280, 'Fe_H_log_g': 4.41, 'Fe_H_Fe_H': 0.02, 'Fe_H_CompStar': 'SUN'}
+Elapsed time: 102.29 seconds[0m
+[32m2023-12-14 08:01:03 [INFO]    [astrobot] > Object Query for  AP TAU by esatakkasoglu(278558027160748033) {'Main_name': 'V* AP Tau', 'object_type': 'EclBin', 'ra': '04 54 44.7093', 'dec': '+26 55 27.335', 'mag_G': 12.54334, 'mag_J': 10.597, 'mag_H': 10.189, 'mag_K': 10.077, 'parallax': 2.2531, 'Fe_H_Teff': 6643, 'Fe_H_log_g': 3.7858}
+Elapsed time: 114.08 seconds[0m
+[32m2023-12-14 08:01:17 [INFO]    [astrobot] > Object Query for  DE CVN by esatakkasoglu(278558027160748033) {'Main_name': 'V* DE CVn', 'object_type': 'EclBin', 'SP_type': 'DA+M3V', 'ra': '13 26 53.2712', 'dec': '+45 32 46.685', 'mag_B': 14.23, 'mag_V': 12.96, 'mag_R': 12.59, 'mag_G': 11.962571, 'mag_J': 9.392, 'mag_H': 8.797, 'mag_K': 8.555, 'mag_g': 13.6, 'mag_r': 12.39, 'mag_i': 11.35, 'parallax': 32.7728, 'distance_pc': 30.513108431382125, 'distance_ly': 99.52033393545868}
+Elapsed time: 127.77 seconds[0m
+[32m2023-12-14 08:09:51 [INFO]    [astrobot] > Object Query for HV AQR by esatakkasoglu(278558027160748033) {'Main_name': 'V* HV Aqr', 'object_type': 'EclBin', 'SP_type': 'F5V', 'ra': '21 21 24.8100', 'dec': '-03 09 36.885', 'mag_B': 10.5, 'mag_V': 9.99, 'mag_R': 9.337, 'mag_I': 9.148, 'mag_G': 9.933081, 'mag_J': 8.912, 'mag_H': 8.559, 'mag_K': 8.505, 'Z_value': -1.3e-05, 'rvz_radvel': -3.77, 'parallax': 6.4835, 'Fe_H_Teff': 6742, 'Fe_H_log_g': 4.47}
+Elapsed time: 19.50 seconds[0m
+[32m2023-12-14 08:10:00 [INFO]    [astrobot] > Object Query for CM DRA by esatakkasoglu(278558027160748033) {'Main_name': 'V* CM Dra', 'object_type': 'BYDraV*', 'SP_type': 'M4.5V', 'ra': '16 34 20.3302', 'dec': '+57 09 44.368', 'mag_B': 14.5, 'mag_V': 12.87, 'mag_R': 10.85, 'mag_I': 9.26, 'mag_G': 11.490692, 'mag_J': 8.501, 'mag_H': 8.039, 'mag_K': 7.796, 'Z_value': -0.000394, 'rvz_radvel': -118.24, 'parallax': 67.2876, 'Fe_H_Teff': 3073, 'Fe_H_Fe_H': -0.11, 'Fe_H_CompStar': 'SUN', 'distance_pc': 14.861579250857513, 'distance_ly': 48.47193242142683}
+Elapsed time: 28.68 seconds[0m
+[32m2023-12-14 08:10:09 [INFO]    [astrobot] > Object Query for  OO AQL by esatakkasoglu(278558027160748033) {'Main_name': 'V* OO Aql', 'object_type': 'SB*', 'SP_type': 'F9V', 'ra': '19 48 12.6525', 'dec': '+09 18 32.374', 'mag_B': 10.26, 'mag_V': 9.49, 'mag_R': 8.773, 'mag_I': 8.762, 'mag_G': 9.387402, 'mag_J': 7.943, 'mag_H': 7.625, 'mag_K': 7.503, 'Z_value': -0.000105, 'rvz_radvel': -31.57, 'parallax': 8.5271}
+Elapsed time: 36.84 seconds[0m
+[32m2023-12-14 08:10:18 [INFO]    [astrobot] > Object Query for  AO CAM by esatakkasoglu(278558027160748033) {'Main_name': 'V* AO Cam', 'object_type': 'EclBin', 'SP_type': 'G0V', 'ra': '04 28 13.6471', 'dec': '+53 02 44.463', 'mag_B': 11.23, 'mag_V': 10.51, 'mag_R': 9.071, 'mag_I': 8.674, 'mag_G': 10.406006, 'mag_J': 8.97, 'mag_H': 8.662, 'mag_K': 8.586, 'Z_value': -4.4e-05, 'rvz_radvel': -13.17, 'parallax': 6.7248}
+Elapsed time: 46.27 seconds[0m
+[32m2023-12-14 08:10:26 [INFO]    [astrobot] > Object Query for YY GEM by esatakkasoglu(278558027160748033) {'Main_name': 'V* YY Gem', 'IDS_name': 'NAME Castor C', 'object_type': 'BYDraV*', 'SP_type': 'M0.5VeFe-2', 'ra': '07 34 37.4474', 'dec': '+31 52 10.179', 'mag_U': 11.6, 'mag_B': 10.56, 'mag_V': 9.27, 'mag_R': 7.69, 'mag_I': 6.67, 'mag_G': 8.296116, 'mag_J': 6.073, 'mag_H': 5.42, 'mag_K': 5.236, 'mag_g': 10.387, 'mag_r': 9.219, 'mag_i': 7.981, 'Z_value': 0.000109, 'rvz_radvel': 32.66, 'parallax': 66.311, 'Fe_H_Teff': 3885, 'Fe_H_Fe_H': 0.03, 'Fe_H_CompStar': 'SUN', 'distance_pc': 15.080454223281203, 'distance_ly': 49.18580627648504}
+Elapsed time: 54.20 seconds[0m
+[32m2023-12-14 08:10:35 [INFO]    [astrobot] > Object Query for  GK BOO by esatakkasoglu(278558027160748033) {'Main_name': 'V* GK Boo', 'object_type': 'SB*', 'ra': '14 38 20.6952', 'dec': '+36 32 25.278', 'mag_B': 11.72, 'mag_V': 10.93, 'mag_R': 10.5, 'mag_G': 10.544668, 'mag_J': 9.23, 'mag_H': 8.7, 'mag_K': 8.629, 'parallax': 7.9174, 'Fe_H_CompStar': 'SUN'}
+Elapsed time: 63.48 seconds[0m
+[32m2023-12-14 08:10:44 [INFO]    [astrobot] > Object Query for  CU CNC by esatakkasoglu(278558027160748033) {'Main_name': 'V* CU Cnc', 'object_type': 'SB*', 'SP_type': 'M5Ve', 'ra': '08 31 37.5741', 'dec': '+19 23 39.398', 'mag_B': 12.83, 'mag_V': 11.809, 'mag_R': 11.592, 'mag_G': 10.576141, 'mag_J': 7.509, 'mag_H': 6.894, 'mag_K': 6.603, 'mag_u': 15.513, 'mag_g': 14.856, 'mag_r': 12.793, 'mag_i': 13.328, 'mag_z': 10.381, 'Z_value': -0.000131, 'rvz_radvel': -39.342, 'parallax': 60.0602, 'Fe_H_Teff': 3141, 'distance_pc': 16.64996120559039, 'distance_ly': 54.30484746970539}
+Elapsed time: 72.72 seconds[0m
+[32m2023-12-14 08:10:53 [INFO]    [astrobot] > Object Query for  BS UMA by esatakkasoglu(278558027160748033) {'Main_name': 'V* BS UMa', 'object_type': 'EclBin', 'ra': '11 25 41.6466', 'dec': '+42 34 49.674', 'mag_B': 13.41, 'mag_V': 12.46, 'mag_R': 11.54, 'mag_G': 11.986719, 'mag_J': 9.988, 'mag_H': 9.395, 'mag_K': 9.258, 'parallax': 7.623, 'Fe_H_Teff': 4280, 'Fe_H_log_g': 4.41, 'Fe_H_Fe_H': 0.02, 'Fe_H_CompStar': 'SUN'}
+Elapsed time: 81.68 seconds[0m
+[32m2023-12-14 08:11:02 [INFO]    [astrobot] > Object Query for  AP TAU by esatakkasoglu(278558027160748033) {'Main_name': 'V* AP Tau', 'object_type': 'EclBin', 'ra': '04 54 44.7093', 'dec': '+26 55 27.335', 'mag_G': 12.54334, 'mag_J': 10.597, 'mag_H': 10.189, 'mag_K': 10.077, 'parallax': 2.2531, 'Fe_H_Teff': 6643, 'Fe_H_log_g': 3.7858}
+Elapsed time: 90.71 seconds[0m
+[32m2023-12-14 08:11:14 [INFO]    [astrobot] > Object Query for  DE CVN by esatakkasoglu(278558027160748033) {'Main_name': 'V* DE CVn', 'object_type': 'EclBin', 'SP_type': 'DA+M3V', 'ra': '13 26 53.2712', 'dec': '+45 32 46.685', 'mag_B': 14.23, 'mag_V': 12.96, 'mag_R': 12.59, 'mag_G': 11.962571, 'mag_J': 9.392, 'mag_H': 8.797, 'mag_K': 8.555, 'mag_g': 13.6, 'mag_r': 12.39, 'mag_i': 11.35, 'parallax': 32.7728, 'distance_pc': 30.513108431382125, 'distance_ly': 99.52033393545868}
+Elapsed time: 102.18 seconds[0m
+[32m2023-12-14 08:58:41 [INFO]    [astrobot] > Object Query for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 101.39 seconds[0m
+[32m2023-12-14 09:09:59 [INFO]    [astrobot] > Object Query for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 89.21 seconds[0m
+[32m2023-12-14 12:28:56 [INFO]    [astrobot] > Object Query for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 20.09 seconds[0m
+[32m2023-12-14 12:33:22 [INFO]    [astrobot] > Object Query for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 12.70 seconds[0m
+[32m2023-12-14 13:04:52 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 31.96 seconds[0m
+[31m2023-12-14 13:54:14 [ERROR]   [astrobot] > object_info_from_file for TW CRB by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:14 [ERROR]   [astrobot] > object_info_from_file for RY AQR by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:14 [ERROR]   [astrobot] > object_info_from_file for MR DEL by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:15 [ERROR]   [astrobot] > object_info_from_file for SZ HER by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:15 [ERROR]   [astrobot] > object_info_from_file for EM AUR by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:15 [ERROR]   [astrobot] > object_info_from_file for RV LYR by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:16 [ERROR]   [astrobot] > object_info_from_file for GK CEP by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:16 [ERROR]   [astrobot] > object_info_from_file for HT VIR by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:16 [ERROR]   [astrobot] > object_info_from_file for V913 OPH by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:17 [ERROR]   [astrobot] > object_info_from_file for V1918 CYG by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:17 [ERROR]   [astrobot] > object_info_from_file for V700 CYG by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:18 [ERROR]   [astrobot] > object_info_from_file for RT LMI by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:18 [ERROR]   [astrobot] > object_info_from_file for EP AND by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:19 [ERROR]   [astrobot] > object_info_from_file for V417 AQL by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:19 [ERROR]   [astrobot] > object_info_from_file for V410 AUR by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:20 [ERROR]   [astrobot] > object_info_from_file for CK BOO by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:20 [ERROR]   [astrobot] > object_info_from_file for TY BOO by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[31m2023-12-14 13:54:21 [ERROR]   [astrobot] > object_info_from_file for AR BOO by esatakkasoglu(278558027160748033)
+ ERROR: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''[0m
+[32m2023-12-14 13:56:27 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 20.99 seconds[0m
+[32m2023-12-14 14:29:47 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 18.12 seconds[0m
+[32m2023-12-14 15:03:09 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 18.45 seconds[0m
+[32m2023-12-15 14:57:41 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 16.13 seconds[0m
+[32m2023-12-15 15:01:26 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 15.41 seconds[0m
+[32m2023-12-15 15:07:06 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 13.29 seconds[0m
+[32m2023-12-15 15:10:45 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 15.27 seconds[0m
+[32m2023-12-15 15:11:44 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 35.03 seconds[0m
+[32m2023-12-15 15:15:23 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 16.57 seconds[0m
+[32m2023-12-15 15:21:41 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 17.34 seconds[0m
+[32m2023-12-15 15:22:42 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 20.09 seconds[0m
+[32m2023-12-15 15:23:50 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 16.47 seconds[0m
+[32m2023-12-15 15:25:40 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 13.31 seconds[0m
+[32m2023-12-15 15:36:49 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 13.79 seconds[0m
+[32m2023-12-15 15:40:19 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 13.86 seconds[0m
+[32m2023-12-15 15:42:11 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 14.59 seconds[0m
+[32m2023-12-15 15:44:10 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 14.05 seconds[0m
+[32m2023-12-15 15:45:52 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 18.68 seconds[0m
+[32m2023-12-15 16:00:59 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 17.61 seconds[0m
+[32m2023-12-15 16:02:33 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 19.84 seconds[0m
+[32m2023-12-15 16:03:12 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 15.85 seconds[0m
+[32m2023-12-15 16:05:15 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 16.77 seconds[0m
+[32m2023-12-15 16:33:55 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 18.28 seconds[0m
+[32m2023-12-15 16:35:58 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 17.98 seconds[0m
+[32m2023-12-15 17:01:47 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 24.72 seconds[0m
+[32m2023-12-15 17:06:44 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 21.67 seconds[0m
+[32m2023-12-15 17:14:02 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 16.67 seconds[0m
+[32m2023-12-15 17:36:03 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 24.18 seconds[0m
+[32m2023-12-15 17:37:27 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 18.76 seconds[0m
+[32m2023-12-15 17:44:49 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 51.63 seconds[0m
+[32m2023-12-15 17:47:12 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 22.60 seconds[0m
+[32m2023-12-15 17:47:52 [INFO]    [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033) 
+Elapsed time: 26.36 seconds[0m
+[32m2023-12-17 14:54:38 [INFO]    [astrobot] > 🕒 object_info_from_file for https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1185912950641402006/main_file.csv?ex=65915680&is=657ee180&hm=51f1d62f7645fd018ae83dc84be04dad06331bd2838e760997cb2e0091e8ee45& by esatakkasoglu(278558027160748033) in bot-deneme-kanalı(1091032108186742844) 
+Elapsed time: 18.55 seconds[0m
+[32m2023-12-17 14:56:16 [INFO]    [astrobot] > 🕒 object_info_from_file for https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1185913343563796500/main_file.csv?ex=659156de&is=657ee1de&hm=5f576c92eaa20de599b0308cfa75514de8e6d9524ef0659de072de11f5f42125& by esatakkasoglu(278558027160748033) in bot-deneme-kanalı(1091032108186742844) 
+Elapsed time: 22.25 seconds[0m
+[32m2023-12-17 15:05:14 [INFO]    [astrobot] > object_query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 10.27 seconds[0m
+[32m2023-12-17 15:06:46 [INFO]    [astrobot] > object_query for V1107 CAS by esatakkasoglu(278558027160748033) {'Main_name': 'V* V1107 Cas', 'object_type': 'EclBin', 'ra': '01 23 14.5927', 'dec': '+61 34 52.877', 'mag_B': 13.76, 'mag_V': 12.88, 'mag_R': 12.92, 'mag_I': 12.237, 'mag_G': 12.9129, 'mag_J': 11.25, 'mag_H': 10.806, 'mag_K': 10.717, 'parallax': 3.2031}
+Elapsed time: 7.42 seconds[0m
+[32m2023-12-17 15:07:03 [INFO]    [astrobot] > object_query for V1107 CAS by esatakkasoglu(278558027160748033) {'Main_name': 'V* V1107 Cas', 'object_type': 'EclBin', 'ra': '01 23 14.5927', 'dec': '+61 34 52.877', 'mag_B': 13.76, 'mag_V': 12.88, 'mag_R': 12.92, 'mag_I': 12.237, 'mag_G': 12.9129, 'mag_J': 11.25, 'mag_H': 10.806, 'mag_K': 10.717, 'parallax': 3.2031}
+Elapsed time: 4.49 seconds[0m
+[32m2023-12-17 15:07:20 [INFO]    [astrobot] > object_query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 4.92 seconds[0m
+[32m2023-12-17 15:05:14 [INFO]    [astrobot] > object_query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 10.27 seconds[0m
+[32m2023-12-17 15:06:46 [INFO]    [astrobot] > object_query for V1107 CAS by esatakkasoglu(278558027160748033) {'Main_name': 'V* V1107 Cas', 'object_type': 'EclBin', 'ra': '01 23 14.5927', 'dec': '+61 34 52.877', 'mag_B': 13.76, 'mag_V': 12.88, 'mag_R': 12.92, 'mag_I': 12.237, 'mag_G': 12.9129, 'mag_J': 11.25, 'mag_H': 10.806, 'mag_K': 10.717, 'parallax': 3.2031}
+Elapsed time: 7.42 seconds[0m
+[32m2023-12-17 15:07:03 [INFO]    [astrobot] > object_query for V1107 CAS by esatakkasoglu(278558027160748033) {'Main_name': 'V* V1107 Cas', 'object_type': 'EclBin', 'ra': '01 23 14.5927', 'dec': '+61 34 52.877', 'mag_B': 13.76, 'mag_V': 12.88, 'mag_R': 12.92, 'mag_I': 12.237, 'mag_G': 12.9129, 'mag_J': 11.25, 'mag_H': 10.806, 'mag_K': 10.717, 'parallax': 3.2031}
+Elapsed time: 4.49 seconds[0m
+[32m2023-12-17 15:07:20 [INFO]    [astrobot] > object_query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 4.92 seconds[0m
+[31m2023-12-17 15:20:08 [ERROR]   [astrobot] > object_query for VEGA by esatakkasoglu(278558027160748033)
+ ERROR: __init__() should return None, not 'coroutine'[0m
+[31m2023-12-17 15:21:49 [ERROR]   [astrobot] > object_query for VEGA by esatakkasoglu(278558027160748033)
+ ERROR: __init__() should return None, not 'coroutine'[0m
+[31m2023-12-17 15:23:22 [ERROR]   [astrobot] > object_query for VENUS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-17 15:31:35 [ERROR]   [astrobot] > object_query for VENUASDAŞ by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-17 15:33:07 [ERROR]   [astrobot] > object_query for VENUASDAŞ"" by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for TW CRB by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for RY AQR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for MR DEL by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for SZ HER by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for EM AUR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for RV LYR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for GK CEP by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for HT VIR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for V913 OPH by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:35 [ERROR]   [astrobot] > object_info_from_file for V1918 CYG by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for V700 CYG by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for RT LMI by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for EP AND by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for V417 AQL by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for V410 AUR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for CK BOO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for TY BOO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for AR BOO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for GN BOO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for TU BOO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for TZ BOO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for LR CAM by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for EH CNC by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for BI CVN by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for DF CVN by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for V1107 CAS by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for CT CET by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for VW CEP by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for AK HER by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for V829 HER by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for CV CYG by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:36 [ERROR]   [astrobot] > object_info_from_file for BV DRA by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for SW LAC by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for XY LEO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for VW LMI by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for V508 OPH by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for V2388 OPH by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for ER ORI by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for U PEG by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for RZ TAU by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for AH VIR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for BW DRA by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for AH AUR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for BE SCL by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for V2082 CYG by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for V592 PER by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for CW SGE by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for V402 AUR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:37 [ERROR]   [astrobot] > object_info_from_file for DV PSC by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for V471 TAU by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for YY GEM by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for GK BOO by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for CU CNC by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for BS UMA by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for AP TAU by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for DE CVN by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for FBS 1345+796 by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for FBS 1531+381 by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for CM DRA by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for OO AQL by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for AO CAM by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for V376 AND by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for DN CAM by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for YY ERI by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for BV ERI by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for V351 PEG by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:38 [ERROR]   [astrobot] > object_info_from_file for TY PUP by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:39 [ERROR]   [astrobot] > object_info_from_file for GZ AND by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[31m2023-12-17 15:38:39 [ERROR]   [astrobot] > object_info_from_file for HV AQR by esatakkasoglu(278558027160748033)
+ ERROR: 'coroutine' object has no attribute 'sunset'[0m
+[32m2023-12-17 15:38:40 [INFO]    [astrobot] > 🕒 object_info_from_file for https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1185924071498719232/main_file.csv?ex=659160dc&is=657eebdc&hm=6feb3c824108ef5082db3f465682742326648630e0c1c7b4f393619cdde58b4c& by esatakkasoglu(278558027160748033) in bot-deneme-kanalı(1091032108186742844) 
+Elapsed time: 8.77 seconds[0m
+[32m2023-12-17 15:52:50 [INFO]    [astrobot] > 🕒 object_info_from_file for https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1185927618529345647/main_file.csv?ex=65916429&is=657eef29&hm=4ee91b7d76bb72e64679e011ef8973102244009357e406572c2757303a5c6b03& by esatakkasoglu(278558027160748033) in bot-deneme-kanalı(1091032108186742844) 
+Elapsed time: 13.03 seconds[0m
+[32m2023-12-17 15:53:39 [INFO]    [astrobot] > object_query for VEGA by esatakkasoglu(278558027160748033) {'Main_name': '* alf Lyr', 'IDS_name': 'NAME Vega', 'object_type': 'delSctV*', 'SP_type': 'A0Va', 'ra': '18 36 56.3363', 'dec': '+38 47 01.280', 'mag_U': 0.03, 'mag_B': 0.03, 'mag_V': 0.03, 'mag_R': 0.07, 'mag_I': 0.1, 'mag_J': -0.177, 'mag_H': -0.029, 'mag_K': 0.129, 'Z_value': -6.9e-05, 'rvz_radvel': -20.6, 'parallax': 130.23, 'Fe_H_Teff': 9500, 'Fe_H_log_g': 4.0, 'Fe_H_Fe_H': -0.5, 'Fe_H_CompStar': 'SUN', 'distance_pc': 7.678722260615834, 'distance_ly': 25.04461337633418}
+Elapsed time: 7.03 seconds[0m
+[31m2023-12-17 16:06:08 [ERROR]   [astrobot] > object_query for VENUSÜ by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-17 16:06:15 [ERROR]   [astrobot] > object_query for VENUS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[32m2023-12-17 16:06:35 [INFO]    [astrobot] > **Command:** `object_info_from_file`
+**Query File:** `['vega']`+ `Istanbul`
+**User:** esatakkasoglu (ID: 278558027160748033)
+**Channel:** bot-deneme-kanalı (ID: 1091032108186742844)
+**Elapsed Time:** 8.98 seconds
+**Server:** AstroCom Ekip (ID: 1023692787985698826)[0m
+[32m2023-12-17 16:15:40 [INFO]    [astrobot] > [1mCommand:[0m 'object_query'
+[1mQuery:[0m '['vega']' + 'Istanbul'
+[1mUser:[0m esatakkasoglu (ID: 278558027160748033)
+[1mChannel:[0m bot-deneme-kanalı (ID: 1091032108186742844)
+[1mElapsed Time:[0m 11.61 seconds
+[1mServer:[0m AstroCom Ekip (ID: 1023692787985698826)[0m
+[31m2023-12-17 16:26:22 [ERROR]   [astrobot] > object_query for VENUS by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[31m2023-12-17 16:26:32 [ERROR]   [astrobot] > object_query for VEAGA by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'pop'[0m
+[32m2023-12-17 16:26:53 [INFO]    [astrobot] > [1mCommand:[1m 'object_query'
+[1mQuery:[1m '['vega']' + 'Istanbul'
+[1mUser:[1m esatakkasoglu (ID: 278558027160748033)
+[1mChannel:[1m bot-deneme-kanalı (ID: 1091032108186742844)
+[1mElapsed Time:[1m 10.57 seconds
+[1mServer:[1m AstroCom Ekip (ID: 1023692787985698826)[0m
+[32m2023-12-17 16:29:57 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['vega']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 8.82 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)**************************************************[0m
+[32m2023-12-17 16:31:07 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['vega']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.84 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)**************************************************[0m
+[32m2023-12-17 16:31:40 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1185937395846225980/main_file_1.csv?ex=65916d44&is=657ef844&hm=03e2a51c45a9861df00b46a2495b8506b8ffad539b22a4ea504179bb577a2efb&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 12.30 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)[0m
+[32m2023-12-17 17:43:07 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1185955363028209695/main_file_1.csv?ex=65917e00&is=657f0900&hm=47220594e7b41a752aa2fef7405bc4b92086ac5a7816df0af89f2e2b7a8093c3&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 15.44 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 18:22:39 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['bv dra']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 12.97 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 18:22:50 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['bw dra']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 6.54 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 18:24:56 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['v410 aur']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 5.86 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 18:38:42 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['Em Aur']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 4.04 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 18:41:46 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['ao cam']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.50 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:19:28 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['venus']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.67 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:20:27 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['venus']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.63 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:20:29 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '['venus']' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.93 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:34:21 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'venus' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.83 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:38:22 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 10.43 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[31m2023-12-17 19:45:02 [ERROR]   [astrobot] > object_query for VEGASD by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'items'[0m
+[32m2023-12-17 19:45:02 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vegasd' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.88 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[31m2023-12-17 19:46:12 [ERROR]   [astrobot] > object_query for VEGASD by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'items'[0m
+[32m2023-12-17 19:46:12 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vegasd' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.77 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:46:31 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 9.16 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:46:42 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'venus' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.61 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:48:18 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'venus' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.58 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[31m2023-12-17 19:53:50 [ERROR]   [astrobot] > object_query for VENU by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'items'[0m
+[32m2023-12-17 19:53:50 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'venu' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 0.96 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 19:54:02 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'venus' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 2.69 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 20:02:03 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 6.39 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 20:11:42 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 5.62 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 20:17:24 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.08 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 20:20:11 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.50 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 20:23:46 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.02 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 20:24:57 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 2.80 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-17 20:25:36 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.04 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 00:29:33 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ap tau' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.11 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 00:31:33 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ap tau' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 9.27 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 00:32:27 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ap tau' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.14 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 00:35:34 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'venus' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 1.20 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 00:36:55 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1186059505902034974/stars_3rd_body_DAG_20231016_1.csv?ex=6591defe&is=657f69fe&hm=38c36ac0bb259775bf0c13935c2ac8300ae5f98060f887ad5bfd780d406b6a30&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 14.13 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 00:40:14 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1186060339981340702/stars_3rd_body_DAG_20231016_1.csv?ex=6591dfc4&is=657f6ac4&hm=9ad8ef94a9aa81c3a76b0909072a1312bd882c52a46948f8ddd5b89a0695bf14&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 14.26 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 00:42:03 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1186060767338971236/main_file_2.csv?ex=6591e02a&is=657f6b2a&hm=2c55cc1a322aea3ec3aa94f1e26a414a04fa6dc2ed65ed849b9d7bf84fe6b6f7&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 21.57 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-18 01:17:13 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 13.36 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-20 16:02:58 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 39.26 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-20 16:03:30 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'Arcturus' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 25.71 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-20 16:07:57 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1187018458433585202/main_file_1.csv?ex=65955c16&is=6582e716&hm=1ee0fc0241f3c3ec2c12ce4d64729b9f5fafe0b90268b01b8a916bb94d33cc9f&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 44.45 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-21 13:46:19 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1187345298348056596/main_file.csv?ex=65968c7a&is=6584177a&hm=e0f946d7619d4222189a97c6bc29dd827f324fb1d03bbea750f991cae17a16ba&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 20.88 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-21 15:47:06 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'm81' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 16.29 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[31m2023-12-21 16:04:46 [ERROR]   [astrobot] > object_query for BASIC DATA :	 [MH94A] HO IX 2 by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'items'[0m
+[32m2023-12-21 16:04:46 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'Basic data :	 [MH94a] Ho IX 2' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 1.34 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-21 16:06:16 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '[MH94a] Ho IX 2' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 12.79 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-22 17:25:56 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '47 tuc' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 20.96 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-22 17:29:12 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '47 tuc' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 24.65 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-22 17:31:12 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ngc188' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 12.63 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-26 12:23:28 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: '47 tuc' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 44.71 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 08:58:21 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189809367390879774/main_file_2.csv?ex=659f8352&is=658d0e52&hm=8c9292c837f59e89c43ee9bca63e287fd370525bf7e03780006039d98d050592&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 66.22 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:03:38 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189810844054323290/main_file_2.csv?ex=659f84b2&is=658d0fb2&hm=9457442a48f8a4dae906382156b9d46ff11cc84e229843c4e7952c9308c11e61&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 31.35 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:04:55 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189811105346887872/main_file_2.csv?ex=659f84f1&is=658d0ff1&hm=b59954ecefc704688e54733bfbfc71eb56c5736f4949c7276eafbb0ab32d4712&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 45.94 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:06:17 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'V1377 Tau' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 21.05 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:10:09 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189812465165414490/main_file_2.csv?ex=659f8635&is=658d1135&hm=090c4b0cb38bf84714018d76765808a9ce51196d5826cffbb15cc55c5f2b886f&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 36.07 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:13:03 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189813193061703691/main_file_2.csv?ex=659f86e2&is=658d11e2&hm=fe394de5e05a745b4a62e6f49208de655e0af6e3acc3df0d6804cd5beb676cfc&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 36.35 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:27:37 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189816853393059880/main_file_2.csv?ex=659f8a4b&is=658d154b&hm=5b6994812be43551b1bb0c0c630115640bce2338a18f281b1f3d5535e02ee993&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 37.59 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:29:07 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189817307862671411/main_file_4.csv?ex=659f8ab7&is=658d15b7&hm=53eb10c4011f4b47e7a3c5d38fc03e99b45de9165d7ec05f709f19015431d926&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 19.01 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2023-12-28 09:37:11 [INFO]    [astrobot] > 
+Command: 'object_info_from_file'
+Query: 'https://cdn.discordapp.com/ephemeral-attachments/1183384000224567316/1189819255613562900/main_file_6.csv?ex=659f8c88&is=658d1788&hm=89f9b53829e9378e16c4d6cf0f26764b7e7d60f7cf8dfd7ec34f1a3d1af9241c&' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 39.10 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
