@@ -337,7 +337,7 @@ async def apod_dict(date: str = None):
     else:
         # Convert the given date to the required format
 
-        calculated_date = await qf.DateCalculator().calculate_astropy_time(date).strftime("%y%m%d")
+        calculated_date = await qf.DateCalculator().calculate_astropy_time(date)
         formatted_date = calculated_date.strftime("%y%m%d")
         url = f'https://apod.nasa.gov/apod/ap{formatted_date}.html'
 
