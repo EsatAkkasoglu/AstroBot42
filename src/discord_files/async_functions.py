@@ -10,6 +10,11 @@ import numpy as np
 import pandas as pd 
 import datetime
 from io import BytesIO
+from random import randrange
+from requests import get
+from bs4 import BeautifulSoup
+from datetime import datetime
+from time import mktime, strftime
 sys.path.append('')
 from astropy.time import Time
 from src.log_files import logger
@@ -17,7 +22,7 @@ from src.Astro_files import queryFunctions as qf
 import discord
 from discord import app_commands
 from discord.ui import Button,View
-Logger = logger.CustomLogger('astrobot', r'src\log_files\async_discord.log')
+Logger = logger.CustomLogger('astrobot', 'src/log_files/async_discord.log')
 
 
 #test qf.SolarSystemObjects(object_name).get_formatted_data()
@@ -312,3 +317,110 @@ async def help(interaction: discord.Interaction,client):
                     value=command.description,
                     inline=False)
   await interaction.followup.send(embed=embed)
+
+async def apod_dict(date: str = None):
+    
+    # If no specific date is given, use today's date or the stored daily date
+    if date == None:
+        #date=now make url now 
+        calculated_date= await qf.DateCalculator().calculate_astropy_time(f"{datetime.utcnow()}")
+        formatted_date = calculated_date.strftime("%y%m%d")
+        print(formatted_date)
+        url = f'https://apod.nasa.gov/apod/ap{formatted_date}.html'
+
+    elif date.lower() == 'random':
+        # Generate a random date between the start date and today
+        start_date = datetime(1995, 6, 16)
+        delta = mktime(datetime.now().timetuple()) - mktime(start_date.timetuple())
+        random_date = datetime.utcfromtimestamp(mktime(start_date.timetuple()) + randrange(int(delta)))
+        url = f'https://apod.nasa.gov/apod/ap{random_date.strftime("%y%m%d")}.html'
+    else:
+        # Convert the given date to the required format
+
+        calculated_date = await qf.DateCalculator().calculate_astropy_time(date).strftime("%y%m%d")
+        formatted_date = calculated_date.strftime("%y%m%d")
+        url = f'https://apod.nasa.gov/apod/ap{formatted_date}.html'
+
+    # Request the webpage
+    response = get(url)
+    if not response.ok:
+        return False
+
+    soup = BeautifulSoup(response.text, 'lxml')
+
+    apod_data = {
+        'date': soup.find_all('p')[1].text.split('<')[0].strip(),
+        'url':url,
+        'video': bool(soup.find('iframe')),
+        'title': f"{soup.find('b').text.strip()}",
+        'image_link': '',
+        'credits': '',
+        'desc': soup.find_all('p')[2].text.replace('\n', ' ').strip().replace('Explanation:', '').strip(),
+
+    }
+
+    # Determine the link based on whether it's a video or image
+    if apod_data['video']:
+        apod_data['image_link'] = soup.find('iframe')['src']
+    else:
+        apod_data['image_link'] = 'https://apod.nasa.gov/apod/' + soup.find_all('a')[1]['href']
+
+    # Extract credits
+    credits_list = [f'[{i.text}]({i["href"]})' for i in soup.find_all('center')[1].findChildren() if i.name == 'a' and i.text != 'Copyright']
+    apod_data['credits'] = ', '.join(credits_list)
+
+    return apod_data
+#adding for discord embed 
+async def  apod_embed(interaction: discord.Interaction,date:str=None):
+    
+    await interaction.response.defer()
+    apod=await apod_dict(date)
+    # Create the embed
+    embed = discord.Embed(title=apod['title'],url=apod['url'], description=f"{apod['desc']}\nCredits:{apod['credits']}", color=discord.Color.orange(),timestamp=datetime.now())
+    embed.set_footer(text=f"NASA-APOD",icon_url="https://gpm.nasa.gov/themes/pmm_bs/images/nasa-logo-large-v1.png")
+
+    # Define buttons
+    view = View()
+    auto_button = Button(label="Automatically share on this server every day 🔄️", style=discord.ButtonStyle.green)
+    
+    # Button callbacks
+    async def on_auto_button_click(interaction: discord.Interaction):
+        if interaction.user.guild_permissions.manage_messages:
+            #save a auto_apod.csv file 
+            #check if already exist
+            if os.path.isfile("database/csv/auto_apod.csv"):
+                #check if already in file
+                df=pd.read_csv("database/csv/auto_apod.csv")
+                if interaction.guild.id in df['server_id'].values:
+                    await interaction.response.send_message(f"Your server already in **automation** list! ❌", ephemeral=True)
+                else:
+                    new_row = {'server_id': interaction.guild.id, 'channel_id': interaction.channel.id}
+                    df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+                    df.to_csv("database/csv/auto_apod.csv",index=False)
+                    await interaction.response.send_message(f"Your server has been successfully added to the **automation** list! ✅", ephemeral=True)
+            else:
+                df=pd.DataFrame(columns=['server_id','channel_id'])
+                new_row = {'server_id': interaction.guild.id, 'channel_id': interaction.channel.id}
+                df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+                df.to_csv("database/csv/auto_apod.csv",index=False)
+                await interaction.response.send_message(f"Your server has been successfully added to the **automation** list! ✅", ephemeral=True)
+        else:
+            await interaction.response.send_message(f"You don't have permission to do that! ❌", ephemeral=True)   
+    auto_button.callback = on_auto_button_click
+    #add button to view
+    view.add_item(auto_button)
+    #eğer resim varsa set_image 
+    if not apod['video']:
+        embed.set_image(url=apod['image_link'])
+        await interaction.followup.send(embed=embed,view=view)
+    else :
+        await interaction.followup.send(embed=embed,view=view)
+        await interaction.followup.send(apod['video'])
+      # Define buttons
+
+#test for async 
+if __name__ == "__main__":
+    import asyncio
+    async def main():
+        print(await apod_dict())
+    asyncio.run(main())

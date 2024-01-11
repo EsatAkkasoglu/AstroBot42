@@ -33,7 +33,7 @@ class TestDatabaseConnection(unittest.TestCase):
         return database_connect_result
     def test_pandasDFagent(self):
         # Test a query and verify the results
-        query = "Group the total number of changing years into groups of 10. Add the duration sum values of all groups. Visualize with a bar chart"
+        query = "Group the total number of changing years intoğ groups of 10. Add the duration sum values of all groups. Visualize with a bar chart"
         result = self.agent.run_query(query)
         # Assert the results based on your expectations
         self.assertIsInstance(result, dict)

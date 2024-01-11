@@ -642,8 +642,6 @@ async def observable_star_sunset_sunrise(data:pd.DataFrame):
         >>> plt.show()
     """
 
-    #wkdjkqa
-
     # Filter the data for stars that are observable and good for observation
     data['sunset_nautical_dawn'] = pd.to_datetime(data['sunset_nautical_dawn'])
     data['sunrise_nautical_dawn'] = pd.to_datetime(data['sunrise_nautical_dawn'])
