@@ -8,6 +8,7 @@ import asyncio
 import time
 import numpy as np
 import pandas as pd 
+import csv
 import datetime
 from io import BytesIO
 from random import randrange
@@ -19,6 +20,7 @@ sys.path.append('')
 from astropy.time import Time
 from src.log_files import logger
 from src.Astro_files import queryFunctions as qf
+import database.local_save
 import discord
 from discord import app_commands
 from discord.ui import Button,View
@@ -199,7 +201,7 @@ async def object_info_from_file(interaction: discord.Interaction, file: discord.
   sunset_sunrise_image=await qf.observable_star_sunset_sunrise(main_df)
   sunset_sunrise_file= discord.File(sunset_sunrise_image, filename=f"{local_time}_area_plot.png")
 
-  embed = discord.Embed(title="🌟 Object Info From File", color=discord.Color.blurple(), timestamp=datetime.datetime.utcnow())
+  embed = discord.Embed(title="🌟 Object Info From File", color=discord.Color.blurple(), timestamp=datetime.utcnow())
   embed.add_field(name="🌆 City", value=f"{observer_input.name}", inline=True)
   embed.add_field(name="🌇 Sunset", value=f"{(str(sun_set.iso).rsplit('.',1)[0])} ", inline=True)
   embed.add_field(name="🌅 Sunrise", value=f"{(str(sun_rise.iso).rsplit('.',1)[0])} ", inline=True)
@@ -325,7 +327,7 @@ async def apod_dict(date: str = None):
         #date=now make url now 
         calculated_date= await qf.DateCalculator().calculate_astropy_time(f"{datetime.utcnow()}")
         formatted_date = calculated_date.strftime("%y%m%d")
-        print(formatted_date)
+
         url = f'https://apod.nasa.gov/apod/ap{formatted_date}.html'
 
     elif date.lower() == 'random':
@@ -368,56 +370,117 @@ async def apod_dict(date: str = None):
     # Extract credits
     credits_list = [f'[{i.text}]({i["href"]})' for i in soup.find_all('center')[1].findChildren() if i.name == 'a' and i.text != 'Copyright']
     apod_data['credits'] = ', '.join(credits_list)
-
-    return apod_data
-#adding for discord embed 
-async def  apod_embed(interaction: discord.Interaction,date:str=None):
-    
-    await interaction.response.defer()
-    apod=await apod_dict(date)
     # Create the embed
-    embed = discord.Embed(title=apod['title'],url=apod['url'], description=f"{apod['desc']}\nCredits:{apod['credits']}", color=discord.Color.orange(),timestamp=datetime.now())
-    embed.set_footer(text=f"NASA-APOD",icon_url="https://gpm.nasa.gov/themes/pmm_bs/images/nasa-logo-large-v1.png")
+    embed = discord.Embed(title=apod_data['title'], url=apod_data['url'], description=f"{apod_data['desc']}\nCredits: {apod_data['credits']}", color=discord.Color.orange(), timestamp=datetime.now())
+    embed.set_footer(text=f"NASA-APOD", icon_url="https://gpm.nasa.gov/themes/pmm_bs/images/nasa-logo-large-v1.png")
+        # Add image to the embed if it's not a video
+    if not apod_data['video']:
+        embed.set_image(url=apod_data['image_link'])
+    return embed
+#adding for discord embed 
+# Function to create the APOD embed
+async def create_apod_embed(embed, interaction:discord.Interaction):
+    csv_manager = database.local_save.CsvManager('database/csv/auto_news.csv')
+    file_exists = os.path.exists("database/csv/auto_news.csv")
+    async def on_delete_button_click(interaction: discord.Interaction):
+        if interaction.type == discord.InteractionType.component:
+            user = interaction.user
+            guild = interaction.guild
+            forum_channel_name = "news-📰"
 
+
+            # Find the forum channel by name
+            forum_channel = discord.utils.get(guild.channels, name=forum_channel_name, type=discord.ChannelType.forum)
+            
+            if forum_channel:
+                try:
+                    # Delete the forum channel
+                    await csv_manager.remove_channel(forum_channel.id)
+                    await forum_channel.delete(reason=f"Forum removal requested by {user.name}")
+                    await interaction.response.send_message(f"🗑️ The forum '{forum_channel_name}' has been successfully deleted! 🎉", ephemeral=True)
+
+
+                    # Confirm deletion to the user
+                    await interaction.followup.send(f"✅ The forum '{forum_channel_name}' has been removed from automation and deleted.", ephemeral=True)
+                    #log
+                    Logger.info(f"Forum channel '{forum_channel_name}' deleted by {user} in {guild}.")
+                except discord.Forbidden:
+                    await interaction.response.send_message("❌ I do not have permissions to delete the forum.", ephemeral=True)
+                except discord.HTTPException as e:
+                    await interaction.response.send_message(f"❌ An error occurred: {e}", ephemeral=True)
+            else:
+                await interaction.response.send_message(f"❌ Could not find the forum named '{forum_channel_name}'.", ephemeral=True)
+
+    async def on_forum_button_click(interaction: discord.Interaction):
+        csv_manager = database.local_save.CsvManager('database/csv/auto_news.csv')
+        file_exists = os.path.exists("database/csv/auto_news.csv")
+        #if file not exist create file 
+        if not file_exists:
+            open("database/csv/auto_news.csv", "w")
+        # Ensure that the interaction type is a button press and user has manage_messages permissions
+        if interaction.type == discord.InteractionType.component and interaction.user.guild_permissions.manage_messages:
+            user = interaction.user
+            guild = interaction.guild
+            forum_channel_name = "news-📰"
+
+            # Try to find an existing forum channel by name
+            forum_channel = discord.utils.get(guild.channels, name=forum_channel_name, type=discord.ChannelType.forum)
+
+
+            # If the forum channel does not exist, create it
+            if forum_channel is None:
+                try:
+                    forum_channel = await guild.create_forum(
+                        name=forum_channel_name,
+                        category=None, 
+                        reason="Creating a forum channel for news",
+                        topic="A forum channel for news",
+                        nsfw=False,
+                        default_reaction_emoji="📰",
+                        default_auto_archive_duration=4320,
+                        default_layout=discord.ForumLayoutType.gallery_view
+                    )
+                    # Use CsvManager to update the channel info
+                    await csv_manager.update_channel_info(guild.id, guild.name, forum_channel.id, user_name=user.name)
+                    await interaction.response.send_message(f"✅ Forum channel '{forum_channel_name}' created!", ephemeral=True)
+                    Logger.info(f"Forum channel '{forum_channel_name}' created by {user} in {guild}.")
+
+                except discord.DiscordException as e:
+                    await interaction.response.send_message(f"❌ Failed to create forum channel: {e}", ephemeral=True)
+                    Logger.info(f"Failed to create forum channel '{forum_channel_name}' by {user} in {guild}.", exc_info=1)
+                    return
+            else:
+                # Inform the user that the forum already exists
+                await interaction.response.send_message(f"ℹ️ Forum channel '{forum_channel_name}' already exists.", ephemeral=True)
+        else:
+            # Inform the user that they don't have the required permissions
+            await interaction.response.send_message("❌ You don't have permission to do that! ❌", ephemeral=True)
     # Define buttons
     view = View()
-    auto_button = Button(label="Automatically share on this server every day 🔄️", style=discord.ButtonStyle.green)
-    
-    # Button callbacks
-    async def on_auto_button_click(interaction: discord.Interaction):
-        if interaction.user.guild_permissions.manage_messages:
-            #save a auto_apod.csv file 
-            #check if already exist
-            if os.path.isfile("database/csv/auto_apod.csv"):
-                #check if already in file
-                df=pd.read_csv("database/csv/auto_apod.csv")
-                if interaction.guild.id in df['server_id'].values:
-                    await interaction.response.send_message(f"Your server already in **automation** list! ❌", ephemeral=True)
-                else:
-                    new_row = {'server_id': interaction.guild.id, 'channel_id': interaction.channel.id}
-                    df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-                    df.to_csv("database/csv/auto_apod.csv",index=False)
-                    await interaction.response.send_message(f"Your server has been successfully added to the **automation** list! ✅", ephemeral=True)
-            else:
-                df=pd.DataFrame(columns=['server_id','channel_id'])
-                new_row = {'server_id': interaction.guild.id, 'channel_id': interaction.channel.id}
-                df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-                df.to_csv("database/csv/auto_apod.csv",index=False)
-                await interaction.response.send_message(f"Your server has been successfully added to the **automation** list! ✅", ephemeral=True)
-        else:
-            await interaction.response.send_message(f"You don't have permission to do that! ❌", ephemeral=True)   
-    auto_button.callback = on_auto_button_click
-    #add button to view
-    view.add_item(auto_button)
-    #eğer resim varsa set_image 
-    if not apod['video']:
-        embed.set_image(url=apod['image_link'])
-        await interaction.followup.send(embed=embed,view=view)
-    else :
-        await interaction.followup.send(embed=embed,view=view)
-        await interaction.followup.send(apod['video'])
-      # Define buttons
+    btn_forum = Button(label="Adding NEWS Forum to get the news every day", style=discord.ButtonStyle.green)
+    delete_button = Button(label="Remove this server from the list 🗑️", style=discord.ButtonStyle.red)
 
+    # Assign callbacks
+    delete_button.callback = on_delete_button_click
+    btn_forum.callback = on_forum_button_click
+
+    # Add buttons to the view
+    view.add_item(btn_forum)
+    view.add_item(delete_button)
+
+    return embed, view
+# Function to interact with the APOD command
+async def apod_interaction(interaction: discord.Interaction, date: str = None):
+    await interaction.response.defer()
+    apod = await apod_dict(date)
+    embed, view = await create_apod_embed(apod, interaction)
+    await interaction.followup.send(embed=embed, view=view)
+
+# Function to use APOD without interaction
+async def apod_non_interaction(date: str = None):
+    apod = await apod_dict(date)
+    embed, view = await create_apod_embed(apod, None)
+    return embed, view
 #test for async 
 if __name__ == "__main__":
     import asyncio

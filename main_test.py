@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv("config.env")
 from database.connection import DatabaseConnection 
 from src.openAI_functions.AI_functions import  PandasDataFrameAgent,DocBot
-from src.log_files.logger import Logger
+from log_files.Logger import Logger
 red = "\033[1;37;41m"
 green = "\033[1;37;42m"
 reset = "\033[0;0m"
