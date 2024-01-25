@@ -168,7 +168,7 @@ async def on_ready():
     try:
         synced = await client.tree.sync()
         Logger.info(f"synced {len(synced)} command(s)")
-        send_autos.before_loop(client.wait_until_ready)
+        send_autos.after_loop(client.wait_until_ready)
         send_autos.change_interval(seconds=time_until_five)
         send_autos.start(client)  # Start the task
         send_good_morning.start(client)
