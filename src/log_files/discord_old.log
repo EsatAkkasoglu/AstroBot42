@@ -302,3 +302,169 @@
 [31m2024-01-25 15:54:56 [ERROR]   [astroclient] > Failed to post in thread 1200061059676000319: 400 Bad Request (error code: 50006): Cannot send an empty message[0m
 [32m2024-01-25 15:56:16 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
 [32m2024-01-25 15:56:16 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-01-25 16:00:16 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-01-25 16:00:17 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 09:54:15 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 09:54:16 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:01:29 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:01:29 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:04:45 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:04:46 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:17:24 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:17:24 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:19:56 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:19:57 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:20:54 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:20:54 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:39:00 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:39:00 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:45:35 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:45:35 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:46:28 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:46:28 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:48:01 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:48:01 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:54:20 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:54:20 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 10:57:08 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 10:57:09 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 11:00:13 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 11:00:14 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 11:01:38 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 11:01:39 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 11:05:16 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 11:05:17 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 11:11:59 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 11:11:59 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 11:14:59 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 11:15:00 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 11:47:56 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 11:47:57 [INFO]    [astroclient] > synced 5 command(s)[0m
+[31m2024-02-05 11:47:57 [ERROR]   [astroclient] > error syncing commands: Task is already launched and is not completed.[0m
+[32m2024-02-05 12:19:54 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 12:19:54 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 12:56:29 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 12:56:29 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:07:15 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:07:15 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:08:49 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:08:49 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:08:49 [INFO]    [astroclient] > Processing server 965523172667572244, thread 1204003163758403655[0m
+[32m2024-02-05 13:08:50 [INFO]    [astroclient] > Processing server 1023692787985698826, thread 1203978562265153536[0m
+[32m2024-02-05 13:09:49 [INFO]    [astroclient] > Processing server 965523172667572244, thread 1204003163758403655[0m
+[32m2024-02-05 13:09:54 [INFO]    [astroclient] > Processing server 1023692787985698826, thread 1203978562265153536[0m
+[32m2024-02-05 13:28:36 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:28:36 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:28:36 [INFO]    [astroclient] > Processing server 965523172667572244, thread 1204003163758403655[0m
+[32m2024-02-05 13:29:23 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:29:23 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:29:23 [INFO]    [astroclient] > Processing server 965523172667572244, thread 1204003163758403655[0m
+[32m2024-02-05 13:29:51 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:30:23 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:30:23 [INFO]    [astroclient] > Processing server 965523172667572244, thread 1204003163758403655[0m
+[32m2024-02-05 13:32:15 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:32:16 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:44:49 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:44:49 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:50:47 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:50:48 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:56:24 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:56:24 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 13:57:33 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 13:57:34 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:08:55 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:08:56 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:18:38 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:18:39 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:23:29 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:23:30 [INFO]    [astroclient] > synced 5 command(s)[0m
+[33m2024-02-05 14:23:30 [WARNING] [astroclient] > HTTP Error 403 for https://www.sciencedaily.com/rss/space_time.xml[0m
+[33m2024-02-05 14:23:30 [WARNING] [astroclient] > HTTP Error 403 for https://skyandtelescope.org/astronomy-news/feed/[0m
+[33m2024-02-05 14:23:30 [WARNING] [astroclient] > HTTP Error 403 for https://skyandtelescope.org/astronomy-news/feed/[0m
+[33m2024-02-05 14:23:30 [WARNING] [astroclient] > HTTP Error 403 for https://www.sciencedaily.com/rss/space_time.xml[0m
+[32m2024-02-05 14:27:12 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:27:12 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:28:36 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:28:36 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:32:17 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:32:17 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:39:44 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:39:45 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:46:59 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:47:00 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:48:28 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:48:29 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 14:58:22 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 14:58:23 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:05:16 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:05:16 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:06:25 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:06:26 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:07:06 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:07:07 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:13:06 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:13:07 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:19:50 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:19:50 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:21:50 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:21:50 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:23:25 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:23:26 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:24:13 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:24:13 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:25:18 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:25:19 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:27:06 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:27:07 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:28:39 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:28:40 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:39:46 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:39:46 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:40:34 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:40:34 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:50:21 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:50:21 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:51:04 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:51:04 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:53:10 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:53:10 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 15:54:02 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 15:54:02 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:02:03 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:02:04 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:02:45 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:02:45 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:05:25 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:05:26 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:06:35 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:06:36 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:29:59 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:29:59 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:31:30 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:31:31 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:32:52 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:32:53 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:44:11 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:44:12 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 16:44:49 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 16:44:49 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:12:34 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:12:34 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:13:40 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:13:40 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:15:21 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:15:22 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:18:05 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:18:05 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:18:57 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:18:57 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:28:05 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:28:05 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:31:13 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:31:14 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:32:45 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:32:45 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:40:58 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:40:59 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-05 17:43:46 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-05 17:43:47 [INFO]    [astroclient] > synced 5 command(s)[0m

@@ -440,8 +440,13 @@ async def create_apod_embed(embed, interaction:discord.Interaction):
                         default_auto_archive_duration=4320,
                         default_layout=discord.ForumLayoutType.gallery_view
                     )
+
+                    thread_name = f"News on {datetime.utcnow().strftime('%d %B %Y')}"
                     # Use CsvManager to update the channel info
-                    await csv_manager.update_channel_info(guild.id, guild.name, forum_channel.id, user_name=user.name)
+                    apod_embed, apod_view = await apod_non_interaction()
+                    
+                    subheading, initial_message = await forum_channel.create_thread(name=thread_name, embed=apod_embed)
+                    await csv_manager.update_channel_info(guild.id, guild.name, forum_channel.id,subheading.id, user_name=user.name)
                     await interaction.response.send_message(f"✅ Forum channel '{forum_channel_name}' created!", ephemeral=True)
                     Logger.info(f"Forum channel '{forum_channel_name}' created by {user} in {guild}.")
 

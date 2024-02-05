@@ -52,3 +52,116 @@ Server: AstroCom Ekip (ID: 1023692787985698826)
 [32m2024-01-25 14:36:28 [INFO]    [astrobot] > Forum channel 'news-📰' deleted by esatakkasoglu in AstroCom Ekip.[0m
 [32m2024-01-25 14:36:33 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
 [32m2024-01-25 15:31:43 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 09:55:43 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 10:07:20 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 10:07:59 [INFO]    [astrobot] > Forum channel 'news-📰' deleted by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 10:08:01 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 10:17:56 [INFO]    [astrobot] > Forum channel 'news-📰' deleted by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 10:20:10 [INFO]    [astrobot] > Forum channel 'news-📰' deleted by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 10:20:14 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 11:13:08 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 29.52 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:13:54 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 11:15:50 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 9.35 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:20:39 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 4.05 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:20:54 [INFO]    [astrobot] > Forum channel 'news-📰' deleted by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 11:20:58 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 11:21:30 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 4.58 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[31m2024-02-05 11:22:35 [ERROR]   [astrobot] > object_query for TAN 618 by esatakkasoglu(278558027160748033)
+ ERROR: 'NoneType' object has no attribute 'items'[0m
+[32m2024-02-05 11:22:35 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'tan 618' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 1.52 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:22:58 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ton 618' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 9.59 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:24:42 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ngc 188' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 4.98 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:24:50 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ngc 188' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.37 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:24:58 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ngc 188' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: kodlar-çalmak-i̇çi̇n (ID: 1097426371724197888)
+Elapsed Time: 4.34 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:25:04 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ngc 188' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 3.49 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:25:16 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ngc 188' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: kodlar-çalmak-i̇çi̇n (ID: 1097426371724197888)
+Elapsed Time: 4.49 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 11:25:22 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'ngc 188' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 4.12 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m
+[32m2024-02-05 12:58:44 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom.[0m
+[32m2024-02-05 17:33:27 [INFO]    [astrobot] > Forum channel 'news-📰' deleted by esatakkasoglu in AstroCom.[0m
+[32m2024-02-05 17:33:33 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom.[0m
+[32m2024-02-05 17:34:02 [INFO]    [astrobot] > Forum channel 'news-📰' deleted by esatakkasoglu in AstroCom Ekip.[0m
+[32m2024-02-05 17:34:08 [INFO]    [astrobot] > Forum channel 'news-📰' created by esatakkasoglu in AstroCom Ekip.[0m

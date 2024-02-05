@@ -7,8 +7,10 @@ import pandas as pd
 import asyncio
 import time
 import json
+import feedparser
+import aiohttp
 sys.path.append('')
-from datetime import datetime ,timezone,timedelta
+from datetime import datetime ,timezone,timedelta,time
 from src.log_files import logger
 from dotenv import load_dotenv
 load_dotenv("config.env")
@@ -65,8 +67,8 @@ def call_set_activity(client):
 
 # Create instances of CsvManager
 auto_news_manager = database.local_save.CsvManager("database/csv/auto_news.csv")
-
-@tasks.loop(hours=24)
+my_time=time(hour=5, minute=0, second=0,tzinfo=timezone.utc)
+@tasks.loop(time=my_time)
 async def send_autos(client):
     channel_infos = await auto_news_manager.read_channel_list()
     for channel_info in channel_infos:
@@ -74,7 +76,7 @@ async def send_autos(client):
         channel_id = channel_info['channel_id']
         channel = client.get_channel(int(channel_id))
         if channel and isinstance(channel, discord.ForumChannel):
-            today_date = datetime.now().strftime('%d %B %Y')
+            today_date = datetime.utcnow().strftime('%d %B %Y')
             thread_name = f"News on {today_date}"
             try:
                 apod_embed, apod_view = await async_func.apod_non_interaction()
@@ -88,13 +90,25 @@ async def send_autos(client):
         else:
             Logger.error(f"Channel with ID {channel_id} not found or not a forum channel on {server_id}.")
             await auto_news_manager.remove_channel(channel_id)
-        await asyncio.sleep(1)
+        
+        
 local_save= database.local_save
-# Dictionary to store news from all feeds
 
-# Send the news items in a formatted way using thread
-async def send_news(thread):
-    # Load seen news items from the CSV file
+async def fetch_and_filter_news(source, url, seen_news_links):
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+    async with aiohttp.ClientSession(headers=headers) as session:
+        async with session.get(url) as response:
+            if response.status == 200:
+                content = await response.text()
+                feed = feedparser.parse(content)
+                new_news_items = [item for item in feed.entries if item.link not in seen_news_links]
+                return source, new_news_items
+            else:
+                Logger.warning(f"HTTP Error {response.status} for {url}")
+                return source, []
+
+async def send_news(thread, unsent_news_csv):
+    # Load seen news links from news_links.csv
     seen_news_links = set()
     if os.path.exists(local_save.news_csv_file):
         with open(local_save.news_csv_file, mode='r', newline='') as csv_file:
@@ -102,65 +116,87 @@ async def send_news(thread):
             for row in csv_reader:
                 seen_news_links.add(row['link'])
 
-    all_news = {}
+    # Fetch and filter news items
+    tasks = [fetch_and_filter_news(source, url, seen_news_links) for source, url in local_save.rss_urls.items()]
+    news_results = await asyncio.gather(*tasks)
 
-    for source, url in local_save.rss_urls.items():
-        new_news_items = []
-        news_items = local_save.fetch_news(url)
-        for item in news_items:
-            if item['link'] not in local_save.seen_news and item['link'] not in seen_news_links:
+    # Prepare to write new unseen news items to unsent_news.csv
+    new_news_items = []
+    for source, items in news_results:
+        for item in items:
+            if item['link'] not in seen_news_links:
                 new_news_items.append(item)
-                local_save.seen_news.add(item['link'])
+                seen_news_links.add(item['link'])
 
-        all_news[source] = new_news_items
+    # Save new unseen news items to unsent_news.csv and update news_links.csv
+    with open(unsent_news_csv, mode='w', newline='') as unsent_file, \
+         open(local_save.news_csv_file, mode='a', newline='') as seen_file:
+        unsent_writer = csv.DictWriter(unsent_file, fieldnames=['link', 'title', 'published'])
+        seen_writer = csv.DictWriter(seen_file, fieldnames=['link', 'title', 'published'])
+        
+        unsent_writer.writeheader()
+        seen_writer.writeheader()
 
-    # Save the news data as a JSON file
-    with open(local_save.news_csv_file, 'w') as json_file:
-        json.dump(list(local_save.seen_news), json_file)
+        for item in new_news_items:
+            unsent_writer.writerow({'link': item['link'], 'title': item['title'], 'published': item['published']})
+            seen_writer.writerow({'link': item['link'], 'title': item['title'], 'published': item['published']})
 
+    # Send the news items from unsent_news.csv
+    with open(unsent_news_csv, mode='r', newline='') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+            message = f"**{row['title']}**\n   Link: {row['link']}\n   Published: {row['published']}\n"
+            await thread.send(message)
 
-    if all_news:
-        for source, news_items in all_news.items():
-            if news_items:  # Check if there are new news items
-                message = f""
-                for i, item in enumerate(news_items[:5], 1):
-                    message += f"{i}. **{item['title']}**\n   Link: {item['link']}\n   Published: {item['published']}\n"
-                await thread.send(message)
-                await asyncio.sleep(1)  # Sleep to avoid rate limits, adjust as necessary
-            else:
-                # Optionally, you can send a message that there are no new news items.
-                # await thread.send(f"No new news items from {source}.")
-                pass
-    else:
-        # Log or handle the case when there are no news items at all
-        Logger.info("No news items to send.")
+    # Reset unsent_news.csv
+    open(unsent_news_csv, 'w').close()
+    with open(unsent_news_csv, 'w', newline='') as file:
+      writer = csv.DictWriter(file, fieldnames=['link', 'title', 'published'])
+      writer.writeheader()
 
+async def remove_duplicate_rows_async(input_csv_file):
+    """Remove duplicate rows from a CSV file."""
+    seen_links = set()
+    output_rows = []
+
+    with open(input_csv_file, mode='r', newline='') as input_file:
+        reader = csv.DictReader(input_file)
+        fieldnames = reader.fieldnames
+        if fieldnames is None:
+            fieldnames = ['link', 'title', 'published']
+
+        for row in reader:
+            if row['link'] not in seen_links:
+                output_rows.append(row)
+                seen_links.add(row['link'])
+
+    with open(input_csv_file, mode='w', newline='') as output_file:
+        writer = csv.DictWriter(output_file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(output_rows)
 @tasks.loop(hours=6)
 async def send_good_morning(client):
-
-
     channel_infos = await auto_news_manager.read_channel_list()
+    tasks = []  # List to hold coroutine objects
     for channel_info in channel_infos:
-        server_id = channel_info['server_id']
         thread_id = channel_info['thread_id']
         thread = client.get_channel(int(thread_id))
         if thread and isinstance(thread, discord.Thread):
-            try:
-                await send_news(thread)
-            except discord.Forbidden:
-                Logger.error(f"Failed to post in thread {thread_id}: insufficient permissions.")
-            except discord.HTTPException as e:
-                Logger.error(f"Failed to post in thread {thread_id}: {e}")
+            # Create coroutine object and add to the tasks list
+            task = send_news(thread, "database/csv/unset_news.csv")
+            task1=remove_duplicate_rows_async(local_save.news_csv_file)
+            tasks.append(task)
+            tasks.append(task1)
         else:
-            Logger.error(f"Thread with ID {thread_id} not found or not a thread on {server_id}.")
-            await auto_news_manager.remove_channel(thread_id)
+            Logger.error(f"Thread with ID {thread_id} not found or not a thread.")
+    
+    # Check if tasks list is not empty before calling asyncio.gather
+    if tasks:
+        await asyncio.gather(*tasks)
+    else:
+        Logger.error("No tasks to execute.")
 
-#Calculate the time until 5 o'clock UTC
-now = datetime.now(timezone.utc)
-five_oclock_utc = now.replace(hour=5, minute=0, second=0, microsecond=0)
-if now >= five_oclock_utc:
-    five_oclock_utc += timedelta(days=1)
-time_until_five = (five_oclock_utc - now).total_seconds()
+      
 @client.event
 async def on_ready():
     print(f'{client.user.name} has connected to Discord!')
@@ -168,8 +204,6 @@ async def on_ready():
     try:
         synced = await client.tree.sync()
         Logger.info(f"synced {len(synced)} command(s)")
-        send_autos.after_loop(client.wait_until_ready)
-        send_autos.change_interval(seconds=time_until_five)
         send_autos.start(client)  # Start the task
         send_good_morning.start(client)
         call_set_activity(client)
