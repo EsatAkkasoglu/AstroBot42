@@ -67,7 +67,7 @@ def call_set_activity(client):
 
 # Create instances of CsvManager
 auto_news_manager = database.local_save.CsvManager("database/csv/auto_news.csv")
-my_time=time(hour=5, minute=0, second=0,tzinfo=timezone.utc)
+my_time=time(hour=6, minute=0, second=0,tzinfo=timezone.utc)
 @tasks.loop(time=my_time)
 async def send_autos(client):
     channel_infos = await auto_news_manager.read_channel_list()
