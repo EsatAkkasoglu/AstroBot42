@@ -73,13 +73,6 @@ class CsvManager:
 # Path to the CSV file where news links will be saved
 news_csv_file = 'database/csv/news_links.csv'
 
-# Load seen news items from the file if it exists, otherwise create an empty set
-seen_news = set()
-if os.path.exists(news_csv_file):
-    with open(news_csv_file, 'r', newline='') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-        for row in csv_reader:
-            seen_news.add(row['link'])
 
 # RSS feed URLs of popular space news channels
 rss_urls = {

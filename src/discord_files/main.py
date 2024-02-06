@@ -65,10 +65,10 @@ def call_set_activity(client):
     if not set_activity.is_running():
         set_activity.start(client)
 
-# Create instances of CsvManager
+# Create loop for auto thread 
 auto_news_manager = database.local_save.CsvManager("database/csv/auto_news.csv")
-my_time=time(hour=6, minute=0, second=0,tzinfo=timezone.utc)
-@tasks.loop(time=my_time)
+apod_time=time(hour=6, minute=0, second=0,tzinfo=timezone.utc)
+@tasks.loop(time=apod_time)
 async def send_autos(client):
     channel_infos = await auto_news_manager.read_channel_list()
     for channel_info in channel_infos:
@@ -82,6 +82,7 @@ async def send_autos(client):
                 apod_embed, apod_view = await async_func.apod_non_interaction()
                 subheading, initial_message = await channel.create_thread(name=thread_name, embed=apod_embed)
                 await auto_news_manager.update_channel_info(server_id, channel_info['server_name'], channel_id, subheading.id, channel_info['user_name'])
+                Logger.info(f"Created thread {subheading.id} on {server_id} for {channel_id}")
             except discord.Forbidden:
                 error_msg=f"Failed to post in channel {channel_id}: insufficient permissions."
                 Logger.error(error_msg)
@@ -90,113 +91,55 @@ async def send_autos(client):
         else:
             Logger.error(f"Channel with ID {channel_id} not found or not a forum channel on {server_id}.")
             await auto_news_manager.remove_channel(channel_id)
-        
-        
-local_save= database.local_save
 
-async def fetch_and_filter_news(source, url, seen_news_links):
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-    async with aiohttp.ClientSession(headers=headers) as session:
-        async with session.get(url) as response:
-            if response.status == 200:
-                content = await response.text()
-                feed = feedparser.parse(content)
-                new_news_items = [item for item in feed.entries if item.link not in seen_news_links]
-                return source, new_news_items
-            else:
-                Logger.warning(f"HTTP Error {response.status} for {url}")
-                return source, []
-
-async def send_news(thread, unsent_news_csv):
-    # Load seen news links from news_links.csv
-    seen_news_links = set()
-    if os.path.exists(local_save.news_csv_file):
-        with open(local_save.news_csv_file, mode='r', newline='') as csv_file:
-            csv_reader = csv.DictReader(csv_file)
-            for row in csv_reader:
-                seen_news_links.add(row['link'])
-
-    # Fetch and filter news items
-    tasks = [fetch_and_filter_news(source, url, seen_news_links) for source, url in local_save.rss_urls.items()]
-    news_results = await asyncio.gather(*tasks)
-
-    # Prepare to write new unseen news items to unsent_news.csv
-    new_news_items = []
-    for source, items in news_results:
-        for item in items:
-            if item['link'] not in seen_news_links:
-                new_news_items.append(item)
-                seen_news_links.add(item['link'])
-
-    # Save new unseen news items to unsent_news.csv and update news_links.csv
-    with open(unsent_news_csv, mode='w', newline='') as unsent_file, \
-         open(local_save.news_csv_file, mode='a', newline='') as seen_file:
-        unsent_writer = csv.DictWriter(unsent_file, fieldnames=['link', 'title', 'published'])
-        seen_writer = csv.DictWriter(seen_file, fieldnames=['link', 'title', 'published'])
-        
-        unsent_writer.writeheader()
-        seen_writer.writeheader()
-
-        for item in new_news_items:
-            unsent_writer.writerow({'link': item['link'], 'title': item['title'], 'published': item['published']})
-            seen_writer.writerow({'link': item['link'], 'title': item['title'], 'published': item['published']})
-
-    # Send the news items from unsent_news.csv
-    with open(unsent_news_csv, mode='r', newline='') as file:
-        csv_reader = csv.DictReader(file)
-        for row in csv_reader:
-            message = f"**{row['title']}**\n   Link: {row['link']}\n   Published: {row['published']}\n"
-            await thread.send(message)
-
-    # Reset unsent_news.csv
-    open(unsent_news_csv, 'w').close()
-    with open(unsent_news_csv, 'w', newline='') as file:
-      writer = csv.DictWriter(file, fieldnames=['link', 'title', 'published'])
-      writer.writeheader()
-
-async def remove_duplicate_rows_async(input_csv_file):
-    """Remove duplicate rows from a CSV file."""
-    seen_links = set()
-    output_rows = []
-
-    with open(input_csv_file, mode='r', newline='') as input_file:
-        reader = csv.DictReader(input_file)
-        fieldnames = reader.fieldnames
-        if fieldnames is None:
-            fieldnames = ['link', 'title', 'published']
-
-        for row in reader:
-            if row['link'] not in seen_links:
-                output_rows.append(row)
-                seen_links.add(row['link'])
-
-    with open(input_csv_file, mode='w', newline='') as output_file:
-        writer = csv.DictWriter(output_file, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(output_rows)
+# Create an loop of NewsManager     
+self_news = async_func.NewsManager(database.local_save) 
 @tasks.loop(hours=6)
-async def send_good_morning(client):
+async def send_per6_hours_news(client):
     channel_infos = await auto_news_manager.read_channel_list()
-    tasks = []  # List to hold coroutine objects
+    news_tasks = []  # List to hold coroutine objects
     for channel_info in channel_infos:
         thread_id = channel_info['thread_id']
         thread = client.get_channel(int(thread_id))
         if thread and isinstance(thread, discord.Thread):
             # Create coroutine object and add to the tasks list
-            task = send_news(thread, "database/csv/unset_news.csv")
-            task1=remove_duplicate_rows_async(local_save.news_csv_file)
-            tasks.append(task)
-            tasks.append(task1)
+            task = async_func.NewsManager.send_news(self_news,thread=thread, unsent_news_csv="database/csv/unset_news.csv")
+            task1=async_func.NewsManager.remove_duplicate_rows_async(self_news,'database/csv/news_links.csv')
+            news_tasks.append(task)
+            news_tasks.append(task1)
+            # lOGGER INFO
+            Logger.info(f'Sent news at {datetime.now()} on ThreadID: {thread_id} | ThreadName: {thread.name} | ServerID: {channel_info["server_id"]} | ServerName: {channel_info["server_name"]}')
         else:
             Logger.error(f"Thread with ID {thread_id} not found or not a thread.")
     
     # Check if tasks list is not empty before calling asyncio.gather
-    if tasks:
-        await asyncio.gather(*tasks)
+    if news_tasks:
+        await asyncio.gather(*news_tasks)
     else:
         Logger.error("No tasks to execute.")
 
-      
+#send daily link    
+link_time= time(hour=10, minute=0, second=0,tzinfo=timezone.utc)
+@tasks.loop(time=link_time)
+async def send_daily_link(client):
+    """Send one news article per day"""
+    links_tasks = []  # List to hold coroutine objects
+    channel_infos = await auto_news_manager.read_channel_list()
+    for channel_info in channel_infos:
+        thread_id = channel_info['thread_id']
+        thread = client.get_channel(int(thread_id))
+        if thread and isinstance(thread, discord.Thread):
+            # Create coroutine object and add to the tasks list
+            task = async_func.NewsManager.send_daily_links(self_news,thread=thread)
+            links_tasks.append(task)
+            # lOGGER INFO
+            Logger.info(f'Sent daily links at {datetime.now()} on ThreadID: {thread_id} | ThreadName: {thread.name} | ServerID: {channel_info["server_id"]} | ServerName: {channel_info["server_name"]}')
+        else:
+            Logger.error(f"Thread with ID {thread_id} not found or not a thread.")
+    if links_tasks:
+        await asyncio.gather(*links_tasks)
+    else:
+        Logger.error("No tasks to execute.")
 @client.event
 async def on_ready():
     print(f'{client.user.name} has connected to Discord!')
@@ -205,7 +148,8 @@ async def on_ready():
         synced = await client.tree.sync()
         Logger.info(f"synced {len(synced)} command(s)")
         send_autos.start(client)  # Start the task
-        send_good_morning.start(client)
+        send_per6_hours_news.start(client)
+        send_daily_link.start(client)
         call_set_activity(client)
     except Exception as e:
         Logger.error(f"error syncing commands: {e}")
@@ -276,6 +220,7 @@ async def on_message(message):
 
 
 #-----QUERY FUNCTIONS-------------------------
+  
 #####SolarSystemObjects ###########################################
 @client.tree.command(name="object_query",
                       description="Sends information on the object. Star,Black Hole,Planet,Pulsars etc.")
@@ -284,13 +229,17 @@ async def on_message(message):
                       ,date="Date for visibility plot. Default: NOW "
 )
 async def object_query(interaction: discord.Interaction,object_names:str,city:str="Istanbul",date:str = None):
-  await async_func.object_query(interaction,object_names,city,date)
+  query_task=[]
+  query_task.append(async_func.object_query(interaction,object_names,city,date))
+  await asyncio.gather(*query_task)
 
 #####FROM FILE TO EMBED  ###########################################
 @client.tree.command(name="object_info_from_file",
                       description="Sends information on the object. Star,Black Hole,Planet,Pulsars etc.")
 async def object_info_from_file(interaction: discord.Interaction, file: discord.Attachment, object_header: int = 0, epoch_header: str = "Epoch", period_header: str = "Period", city: str = "Istanbul", date: str = None):
-  await async_func.object_info_from_file(interaction,file,object_header,epoch_header,period_header,city,date)
+  from_file_task=[]
+  from_file_task.append(async_func.object_info_from_file(interaction,file,object_header,epoch_header,period_header,city,date))
+  await asyncio.gather(*from_file_task)
 
 #####APOD  ###########################################
 @client.tree.command(name='apod', description='Returns the Astronomy Picture Of The Day')
@@ -303,11 +252,36 @@ async def apod(interaction: discord.Interaction, date: str = None):
 async def serverinfo(interaction: discord.Interaction):
   await async_func.serverinfo(interaction,client=client)
 
+
+
+##### FUNNY  ###########################################
+import Levenshtein as lev
+
+def closest_match(input_str, possibilities):
+    closest = None
+    min_distance = float('inf')
+    for possibility in possibilities:
+        distance = lev.distance(input_str.lower(), possibility.lower())
+        if distance < min_distance:
+            min_distance = distance
+            closest = possibility
+    return closest
+@client.tree.command(name="weight_on_planets", description="Calculate your weight on different celestial bodies")
+async def weight_on_planets(interaction: discord.Interaction, earth_weight: float, celestial_body: str):
+    celestial_body = closest_match(celestial_body,  qf.GRAVITY.keys())
+    celestial_bodies = [celestial_body]  # Since the function expects a list
+    weights = await qf.calculate_weight_on_celestial_bodies(earth_weight, celestial_bodies)
+
+    if weights[celestial_body] == "Unknown celestial body":
+        await interaction.response.send_message(f"Sorry, I don't have data for {celestial_body}.", ephemeral=False)
+    else:
+        weight = weights[celestial_body]
+        await interaction.response.send_message(f"Your weight on {celestial_body} would be approximately {weight:.2f} kg.", ephemeral=False)
+
 #####HELP  ###########################################
 @client.tree.command(name="help", description="Shows the help menu")
 async def help(interaction: discord.Interaction):
   await async_func.help(interaction,client)
-
 
 @client.event
 async def on_slash_command_error(ctx, error):

@@ -9,6 +9,8 @@ import time
 import numpy as np
 import pandas as pd 
 import csv
+import aiohttp
+import feedparser
 import datetime
 from io import BytesIO
 from random import randrange
@@ -486,6 +488,158 @@ async def apod_non_interaction(date: str = None):
     apod = await apod_dict(date)
     embed, view = await create_apod_embed(apod, None)
     return embed, view
+
+class NewsManager:
+    """
+    Manages fetching, filtering, and sending news items.
+    It interacts with local CSV files to keep track of seen and new news items.
+
+    Attributes
+    ----------
+    local_save : database.local_save.LocalSave
+
+    Methods
+    -------
+    fetch_and_filter_news(source, url, seen_news_links)
+        Fetches news from a given URL and filters out already seen news links.
+    send_news(ctx, channel, news_items, source)
+        Sends the news to a specified channel and updates the CSV files accordingly.
+    remove_duplicate_rows(input_csv_file)
+        Removes duplicate rows from the specified CSV file.
+    get_seen_news(source)
+        Returns a list of seen news items for the specified source.
+    ...
+    
+    """
+
+    def __init__(self, database: database.local_save):
+        self.local_save = database
+    async def fetch_and_filter_news(self, source, url, seen_news_links):
+        """
+        Fetches news from a given URL and filters out already seen news links.
+        """
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+        async with aiohttp.ClientSession(headers=headers) as session:
+            async with session.get(url) as response:
+                if response.status == 200:
+                    content = await response.text()
+                    feed = feedparser.parse(content)
+                    new_news_items = [item for item in feed.entries if item.link not in seen_news_links]
+                    return source, new_news_items
+                else:
+                    Logger.warning(f"HTTP Error {response.status} for {url}")
+                    return source, []
+
+    async def send_news(self, thread, unsent_news_csv):
+        """
+        Sends the news to a specified thread and updates the CSV files accordingly.
+        """
+        seen_news_links = self._load_seen_news_links()
+        tasks = [self.fetch_and_filter_news(source, url, seen_news_links) for source, url in self.local_save.rss_urls.items()]
+        news_results = await asyncio.gather(*tasks)
+        new_news_items = self._prepare_new_news_items(news_results, seen_news_links)
+        self._save_news_items(new_news_items, unsent_news_csv, seen_news_links)
+        await self._send_news_items(thread, unsent_news_csv)
+
+    def _load_seen_news_links(self):
+        """
+        Loads seen news links from the local CSV file.
+        """
+        seen_news_links = set()
+        if os.path.exists(self.local_save.news_csv_file):
+            with open(self.local_save.news_csv_file, mode='r', newline='') as csv_file:
+                csv_reader = csv.DictReader(csv_file)
+                for row in csv_reader:
+                    seen_news_links.add(row['link'])
+        return seen_news_links
+
+    def _prepare_new_news_items(self, news_results, seen_news_links):
+        """
+        Prepares new news items that are not in seen_news_links.
+        """
+        new_news_items = []
+        for source, items in news_results:
+            for item in items:
+                if item['link'] not in seen_news_links:
+                    new_news_items.append(item)
+                    seen_news_links.add(item['link'])
+        return new_news_items
+
+    def _save_news_items(self, new_news_items, unsent_news_csv, seen_news_links):
+        """
+        Saves new unseen news items to the specified CSV files.
+        """
+        with open(unsent_news_csv, mode='w', newline='') as unsent_file, \
+             open(self.local_save.news_csv_file, mode='a', newline='') as seen_file:
+            unsent_writer = csv.DictWriter(unsent_file, fieldnames=['link', 'title', 'published'])
+            seen_writer = csv.DictWriter(seen_file, fieldnames=['link', 'title', 'published'])
+            
+            unsent_writer.writeheader()
+            seen_writer.writeheader()
+
+            for item in new_news_items:
+                unsent_writer.writerow({'link': item['link'], 'title': item['title'], 'published': item['published']})
+                seen_writer.writerow({'link': item['link'], 'title': item['title'], 'published': item['published']})
+
+    async def _send_news_items(self, thread, unsent_news_csv):
+        """
+        Sends the news items from the specified CSV file to a thread.
+        """
+        with open(unsent_news_csv, mode='r', newline='') as file:
+            csv_reader = csv.DictReader(file)
+            for row in csv_reader:
+                message = f"**{row['title']}**\n   Link: {row['link']}\n   Published: {row['published']}\n"
+                await thread.send(message)
+
+        # Reset unsent_news.csv
+        open(unsent_news_csv, 'w').close()
+        with open(unsent_news_csv, 'w', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=['link', 'title', 'published'])
+            writer.writeheader()
+
+    async def remove_duplicate_rows_async(self, input_csv_file):
+        """
+        Removes duplicate rows from the specified CSV file.
+        """
+        seen_links = set()
+        output_rows = []
+
+        with open(input_csv_file, mode='r', newline='') as input_file:
+            reader = csv.DictReader(input_file)
+            fieldnames = reader.fieldnames or ['link', 'title', 'published']
+
+            for row in reader:
+                if row['link'] not in seen_links:
+                    output_rows.append(row)
+                    seen_links.add(row['link'])
+
+        with open(input_csv_file, mode='w', newline='') as output_file:
+            writer = csv.DictWriter(output_file, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(output_rows)
+
+    async def send_daily_links(self, thread):
+        """
+        Sends a set of predefined links with descriptions to the specified thread.
+        """
+        links_with_descriptions = [
+            ("# The Sun Now \nThe Sun's outer atmosphere, including hot flare plasma, with bright regions for active areas and dark areas known as coronal holes, which are key sources of solar wind particles.\n**Where:** Corona and hot flare plasma\n**Wavelength:** Extreme Ultraviolet\n","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0193.jpg"),
+            ("## Solar Coronas and Magnetic Loops\nCoronal loops, which are arcs extending off the Sun where plasma moves along magnetic field lines. The brightest spots indicate exceptionally strong magnetic fields near the Sun's surface.\n**Where:** Quiet corona and upper transition region\n**Wavelength:** Extreme Ultraviolet (171 angstroms)\n**Primary ions seen:** 8 times ionized iron (Fe IX)\n**Characteristic temperature:** 1 million K (1.8 million F)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0171.jpg"),
+            ("## Solar Flares and Active Regions\nShowing areas where cooler dense plumes of plasma (filaments and prominences) are located above the visible surface of the Sun. Many of these features either can't be seen or appear as dark lines in the other channels.\n**Where:** Chromosphere (the active areas above the Sun's surface)\n**Wavelength:** Extreme Ultraviolet (304 angstroms)\n**Primary ions seen:** 2 times ionized helium (He II)\n**Characteristic temperature:** 60,000 K (107,540 F)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0304.jpg"),
+            ("## Solar Active Regions and Sunspots\nSunspots, which are cooler, darker areas on the Sun created by strong magnetic fields. They are often the source of solar flares and coronal mass ejections.\n**Where:** Photosphere (the visible surface of the Sun)\n**Wavelength:** Visible light\n**Primary ions seen:** None (visible light)\n**Characteristic temperature:** 6,000 K (10,760 F)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_HMIIC.jpg"),
+            ("Each highlights a different part of the corona.","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_211193171.jpg"),
+            ("[Read information on colorized magnetograms.](https://sdo.gsfc.nasa.gov/assets/docs/HMI_M.ColorTable.pdf)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_HMIBC.jpg"),
+            ("## LYRA 3-Day Quicklook", "https://proba2.sidc.be/lyra/data/3DayQuicklook/LyraCalSWClatest.png"),
+            ("## Latest SWAP Movie", "https://proba2.sidc.be/swap/data/mpg/movies/latest_swap_movie.mp4"),
+            ("## Carrington Rotations - Latest Yellow Movie", "https://proba2.sidc.be/swap/data/mpg/movies/carrington_rotations/latest_cr_movie_yellow.mp4"),
+            ("## Latest SWAP Synoptic Map", "https://proba2.sidc.be/swap/data/SWAPsynopticMap/LatestSWAPsynopticMap.png"),
+            ("## Latest SWAP Polar Image with Edge\n", "http://proba2.oma.be/swap/data/polar_sun/SWAPpolarImageWithEdge/LatestSWAPpolarImageWithEdge.png"),
+        ]
+
+        for description, link in links_with_descriptions:
+            message = f"\n{description}\n{link}"
+            await thread.send(message) 
+
 #test for async 
 if __name__ == "__main__":
     import asyncio
