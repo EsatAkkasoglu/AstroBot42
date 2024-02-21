@@ -197,3 +197,11 @@ Channel: News on 05 February 2024 (ID: 1204074969965924484)
 Elapsed Time: 3.47 seconds
 Server: AstroCom Ekip (ID: 1023692787985698826)
 **************************************************[0m
+[32m2024-02-20 10:57:24 [INFO]    [astrobot] > 
+Command: 'object_query'
+Query: 'vega' + 'Istanbul'
+User: esatakkasoglu (ID: 278558027160748033)
+Channel: bot-deneme-kanalı (ID: 1091032108186742844)
+Elapsed Time: 11.96 seconds
+Server: AstroCom Ekip (ID: 1023692787985698826)
+**************************************************[0m

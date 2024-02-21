@@ -501,3 +501,289 @@
 [32m2024-02-06 14:02:46 [INFO]    [astroclient] > synced 5 command(s)[0m
 [32m2024-02-06 14:04:38 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
 [32m2024-02-06 14:04:38 [INFO]    [astroclient] > synced 5 command(s)[0m
+[32m2024-02-06 15:44:05 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-06 15:44:06 [INFO]    [astroclient] > synced 6 command(s)[0m
+[32m2024-02-06 15:44:06 [INFO]    [astroclient] > Sent news at 2024-02-06 15:44:06.143893 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-07 09:49:19 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-07 09:49:20 [INFO]    [astroclient] > synced 6 command(s)[0m
+[32m2024-02-07 09:49:20 [INFO]    [astroclient] > Sent news at 2024-02-07 09:49:20.131850 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-07 09:50:19 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-07 09:50:19 [INFO]    [astroclient] > synced 6 command(s)[0m
+[32m2024-02-07 09:50:19 [INFO]    [astroclient] > Sent news at 2024-02-07 09:50:19.702661 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 10:55:32 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 10:55:33 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 10:55:33 [INFO]    [astroclient] > Sent news at 2024-02-20 10:55:33.214462 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 10:59:16 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 10:59:17 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 10:59:17 [INFO]    [astroclient] > Sent news at 2024-02-20 10:59:17.180427 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 11:03:30 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 11:03:31 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 11:03:31 [INFO]    [astroclient] > Sent news at 2024-02-20 11:03:31.030674 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 11:04:41 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 11:04:41 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 11:04:41 [INFO]    [astroclient] > Sent news at 2024-02-20 11:04:41.651722 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 11:12:33 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 11:12:33 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 11:12:33 [INFO]    [astroclient] > Sent news at 2024-02-20 11:12:33.826556 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 12:04:15 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 12:04:16 [INFO]    [astroclient] > synced 7 command(s)[0m
+[31m2024-02-20 12:04:16 [ERROR]   [astroclient] > error syncing commands: Task is already launched and is not completed.[0m
+[32m2024-02-20 12:24:03 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 12:24:03 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 12:24:03 [INFO]    [astroclient] > Sent news at 2024-02-20 12:24:03.962905 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 12:28:03 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 12:28:04 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 12:28:04 [INFO]    [astroclient] > Sent news at 2024-02-20 12:28:04.205069 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 12:37:00 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 12:37:01 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 12:37:01 [INFO]    [astroclient] > Sent news at 2024-02-20 12:37:01.198573 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 12:40:11 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 12:40:11 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 12:40:11 [INFO]    [astroclient] > Sent news at 2024-02-20 12:40:11.982130 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:00:23 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:00:24 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:00:24 [INFO]    [astroclient] > Sent news at 2024-02-20 13:00:24.200992 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:03:13 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:03:13 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:03:13 [INFO]    [astroclient] > Sent news at 2024-02-20 13:03:13.809217 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:13:24 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:13:25 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:13:25 [INFO]    [astroclient] > Sent news at 2024-02-20 13:13:25.421522 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:21:36 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:21:36 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:21:36 [INFO]    [astroclient] > Sent news at 2024-02-20 13:21:36.465513 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:23:47 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:23:47 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:23:47 [INFO]    [astroclient] > Sent news at 2024-02-20 13:23:47.635048 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:24:09 [INFO]    [astroclient] > Sent news at 2024-02-20 13:24:09.478717 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:24:31 [INFO]    [astroclient] > Sent news at 2024-02-20 13:24:31.042463 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:25:04 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:25:05 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:25:05 [INFO]    [astroclient] > Sent news at 2024-02-20 13:25:05.367129 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:27:25 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:27:25 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:27:25 [INFO]    [astroclient] > Sent news at 2024-02-20 13:27:25.387203 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:34:41 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:34:42 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:34:42 [INFO]    [astroclient] > Sent news at 2024-02-20 13:34:42.295332 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:35:44 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:35:44 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:35:44 [INFO]    [astroclient] > Sent news at 2024-02-20 13:35:44.788981 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 13:39:25 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 13:39:26 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 13:39:26 [INFO]    [astroclient] > Sent news at 2024-02-20 13:39:26.178096 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:17:58 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 14:17:59 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 14:17:59 [INFO]    [astroclient] > Sent news at 2024-02-20 14:17:59.316470 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:21:11 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 14:21:11 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 14:21:11 [INFO]    [astroclient] > Sent news at 2024-02-20 14:21:11.862533 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:33:47 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 14:33:47 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 14:33:47 [INFO]    [astroclient] > Sent news at 2024-02-20 14:33:47.610359 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:34:32 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 14:34:32 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 14:34:32 [INFO]    [astroclient] > Sent news at 2024-02-20 14:34:32.431104 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:34:54 [INFO]    [astroclient] > Sent news at 2024-02-20 14:34:54.934285 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:36:10 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 14:36:11 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 14:36:11 [INFO]    [astroclient] > Sent news at 2024-02-20 14:36:11.125741 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:46:58 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 14:46:59 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 14:46:59 [INFO]    [astroclient] > Sent news at 2024-02-20 14:46:59.093980 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 14:55:23 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 14:55:23 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 14:55:23 [INFO]    [astroclient] > Sent news at 2024-02-20 14:55:23.944524 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 15:12:55 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 15:12:55 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 15:12:55 [INFO]    [astroclient] > Sent news at 2024-02-20 15:12:55.939791 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 15:13:17 [INFO]    [astroclient] > Sent news at 2024-02-20 15:13:17.667574 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 15:14:28 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 15:14:29 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 15:14:29 [INFO]    [astroclient] > Sent news at 2024-02-20 15:14:29.146985 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 15:15:30 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 15:15:30 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 15:15:30 [INFO]    [astroclient] > Sent news at 2024-02-20 15:15:30.862493 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 15:16:34 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 15:16:34 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 15:16:34 [INFO]    [astroclient] > Sent news at 2024-02-20 15:16:34.739803 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 15:20:33 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 15:20:33 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 15:20:33 [INFO]    [astroclient] > Sent news at 2024-02-20 15:20:33.994598 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 16:41:03 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 16:41:03 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 16:41:03 [INFO]    [astroclient] > Sent news at 2024-02-20 16:41:03.868662 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 16:46:21 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 16:46:21 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 16:46:21 [INFO]    [astroclient] > Sent news at 2024-02-20 16:46:21.779108 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:05:39 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 17:05:40 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 17:05:40 [INFO]    [astroclient] > Sent news at 2024-02-20 17:05:40.248435 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:07:40 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 17:07:41 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 17:07:41 [INFO]    [astroclient] > Sent news at 2024-02-20 17:07:41.020529 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:08:53 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 17:08:53 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 17:08:53 [INFO]    [astroclient] > Sent news at 2024-02-20 17:08:53.612378 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:11:29 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 17:11:29 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 17:11:29 [INFO]    [astroclient] > Sent news at 2024-02-20 17:11:29.366579 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:13:04 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 17:13:05 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 17:13:05 [INFO]    [astroclient] > Sent news at 2024-02-20 17:13:05.064107 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:17:15 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 17:17:16 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 17:17:16 [INFO]    [astroclient] > Sent news at 2024-02-20 17:17:16.344037 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:28:20 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-20 17:28:20 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-20 17:28:20 [INFO]    [astroclient] > Sent news at 2024-02-20 17:28:20.680561 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:28:44 [INFO]    [astroclient] > Sent news at 2024-02-20 17:28:44.103496 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-20 17:29:08 [INFO]    [astroclient] > Sent news at 2024-02-20 17:29:08.304314 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 08:50:15 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 08:50:15 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 08:50:15 [INFO]    [astroclient] > Sent news at 2024-02-21 08:50:15.666799 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 09:08:27 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 09:08:27 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 09:08:27 [INFO]    [astroclient] > Sent news at 2024-02-21 09:08:27.863818 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 09:08:50 [INFO]    [astroclient] > Sent news at 2024-02-21 09:08:50.766423 on ThreadID: 1204074969965924484 | ThreadName: News on 05 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 09:51:01 [INFO]    [astroclient] > Created thread 1209754133079261245 on 1023692787985698826 for 1204072462812188683[0m
+[32m2024-02-21 09:52:03 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 09:52:03 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 09:52:03 [INFO]    [astroclient] > Sent news at 2024-02-21 09:52:03.993740 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 09:54:57 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 09:54:58 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 09:54:58 [INFO]    [astroclient] > Sent news at 2024-02-21 09:54:58.350639 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 09:58:36 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 09:58:36 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 09:58:36 [INFO]    [astroclient] > Sent news at 2024-02-21 09:58:36.686563 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 09:59:52 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 09:59:52 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 09:59:52 [INFO]    [astroclient] > Sent news at 2024-02-21 09:59:52.920957 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:00:09 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 10:00:52 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 10:00:52 [INFO]    [astroclient] > Sent news at 2024-02-21 10:00:52.929825 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:05:11 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 10:05:12 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 10:05:12 [INFO]    [astroclient] > Sent news at 2024-02-21 10:05:12.034567 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:10:01 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 10:10:01 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 10:10:01 [INFO]    [astroclient] > Sent news at 2024-02-21 10:10:01.429667 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:12:45 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 10:12:45 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 10:12:45 [INFO]    [astroclient] > Sent news at 2024-02-21 10:12:45.682009 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:43:54 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 10:43:54 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 10:43:54 [INFO]    [astroclient] > Sent news at 2024-02-21 10:43:54.842488 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:47:58 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 10:47:58 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 10:47:58 [INFO]    [astroclient] > Sent news at 2024-02-21 10:47:58.638927 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:48:20 [INFO]    [astroclient] > Sent news at 2024-02-21 10:48:20.480519 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 10:48:42 [INFO]    [astroclient] > Sent news at 2024-02-21 10:48:42.470968 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 11:01:24 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 11:01:24 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 11:01:24 [INFO]    [astroclient] > Sent news at 2024-02-21 11:01:24.583207 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 11:03:32 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 11:03:33 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 11:03:33 [INFO]    [astroclient] > Sent news at 2024-02-21 11:03:33.233052 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 11:15:24 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 11:15:24 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 11:15:24 [INFO]    [astroclient] > Sent news at 2024-02-21 11:15:24.460631 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 11:17:35 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 11:17:35 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 11:17:35 [INFO]    [astroclient] > Sent news at 2024-02-21 11:17:35.881269 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 11:20:44 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 11:20:54 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 11:20:54 [INFO]    [astroclient] > Sent news at 2024-02-21 11:20:54.141075 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 12:01:28 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 12:01:28 [INFO]    [astroclient] > synced 7 command(s)[0m
+[31m2024-02-21 12:01:28 [ERROR]   [astroclient] > error syncing commands: Task is already launched and is not completed.[0m
+[32m2024-02-21 12:30:29 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 12:30:29 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 12:30:29 [INFO]    [astroclient] > Sent news at 2024-02-21 12:30:29.725770 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 12:32:52 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 12:32:52 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 12:32:52 [INFO]    [astroclient] > Sent news at 2024-02-21 12:32:52.661357 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 13:04:13 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 13:04:14 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 13:04:14 [INFO]    [astroclient] > Sent news at 2024-02-21 13:04:14.317478 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 13:28:27 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 13:28:28 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 13:28:28 [INFO]    [astroclient] > Sent news at 2024-02-21 13:28:28.355909 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 13:38:45 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 13:38:45 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 13:38:45 [INFO]    [astroclient] > Sent news at 2024-02-21 13:38:45.464779 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 13:59:38 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 13:59:39 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 13:59:39 [INFO]    [astroclient] > Sent news at 2024-02-21 13:59:39.078684 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 14:04:28 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 14:04:28 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 14:04:28 [INFO]    [astroclient] > Sent news at 2024-02-21 14:04:28.631375 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 14:08:53 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 14:08:53 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 14:08:53 [INFO]    [astroclient] > Sent news at 2024-02-21 14:08:53.436839 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 14:14:27 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 14:14:28 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 14:14:28 [INFO]    [astroclient] > Sent news at 2024-02-21 14:14:28.016049 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 14:29:20 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 14:29:21 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 14:29:21 [INFO]    [astroclient] > Sent news at 2024-02-21 14:29:21.156634 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 14:32:55 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 14:32:56 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 14:32:56 [INFO]    [astroclient] > Sent news at 2024-02-21 14:32:56.296384 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 14:48:22 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 14:48:22 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 14:48:22 [INFO]    [astroclient] > Sent news at 2024-02-21 14:48:22.547131 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:05:01 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:05:01 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:05:01 [INFO]    [astroclient] > Sent news at 2024-02-21 15:05:01.485755 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:07:03 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:07:04 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:07:04 [INFO]    [astroclient] > Sent news at 2024-02-21 15:07:04.339734 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:13:40 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:13:40 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:13:40 [INFO]    [astroclient] > Sent news at 2024-02-21 15:13:40.711732 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:19:09 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:19:09 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:19:09 [INFO]    [astroclient] > Sent news at 2024-02-21 15:19:09.683271 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:22:37 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:22:37 [INFO]    [astroclient] > synced 7 command(s)[0m
+[31m2024-02-21 15:22:37 [ERROR]   [astroclient] > error syncing commands: Task is already launched and is not completed.[0m
+[32m2024-02-21 15:36:22 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:36:22 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:36:22 [INFO]    [astroclient] > Sent news at 2024-02-21 15:36:22.867840 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:38:01 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:38:02 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:38:02 [INFO]    [astroclient] > Sent news at 2024-02-21 15:38:02.369671 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:39:37 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:39:38 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:39:38 [INFO]    [astroclient] > Sent news at 2024-02-21 15:39:38.139719 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:45:04 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:45:05 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:45:05 [INFO]    [astroclient] > Sent news at 2024-02-21 15:45:05.151913 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:52:34 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:52:34 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 15:52:34 [INFO]    [astroclient] > Sent news at 2024-02-21 15:52:34.859063 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 15:58:46 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 15:58:46 [INFO]    [astroclient] > synced 7 command(s)[0m
+[31m2024-02-21 15:58:46 [ERROR]   [astroclient] > error syncing commands: Task is already launched and is not completed.[0m
+[32m2024-02-21 16:01:58 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 16:01:58 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 16:01:58 [INFO]    [astroclient] > Sent news at 2024-02-21 16:01:58.564557 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:02:20 [INFO]    [astroclient] > Sent news at 2024-02-21 16:02:20.783752 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:02:42 [INFO]    [astroclient] > Sent news at 2024-02-21 16:02:42.984142 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:03:02 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 16:03:03 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 16:03:03 [INFO]    [astroclient] > Sent news at 2024-02-21 16:03:03.634388 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:05:57 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 16:05:57 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 16:05:57 [INFO]    [astroclient] > Sent news at 2024-02-21 16:05:57.805720 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:11:21 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 16:11:21 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 16:11:21 [INFO]    [astroclient] > Sent news at 2024-02-21 16:11:21.769031 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:15:14 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 16:15:15 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 16:15:15 [INFO]    [astroclient] > Sent news at 2024-02-21 16:15:15.618229 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:15:37 [INFO]    [astroclient] > Sent news at 2024-02-21 16:15:37.660237 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m
+[32m2024-02-21 16:22:17 [INFO]    [astroclient] > AstroBot_test has connected to Discord![0m
+[32m2024-02-21 16:22:17 [INFO]    [astroclient] > synced 7 command(s)[0m
+[32m2024-02-21 16:22:17 [INFO]    [astroclient] > Sent news at 2024-02-21 16:22:17.702878 on ThreadID: 1209754133079261245 | ThreadName: News on 21 February 2024 | ServerID: 1023692787985698826 | ServerName: AstroCom Ekip[0m

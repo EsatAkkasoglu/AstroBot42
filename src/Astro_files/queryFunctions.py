@@ -1,6 +1,8 @@
 import io
+import os
 import math
 import requests
+import asyncio
 from datetime import datetime,timedelta
 import pytz
 from timezonefinder import TimezoneFinder
@@ -13,6 +15,8 @@ import matplotlib.colors as mcolors
 from matplotlib.cm import ScalarMappable
 from geopy.geocoders import Nominatim
 from PIL import Image
+from zipfile import ZipFile,ZIP_DEFLATED
+import tempfile
 import ephem 
 from astroquery.simbad import Simbad
 from astropy.coordinates import EarthLocation, SkyCoord
@@ -62,7 +66,6 @@ class SolarSystemObjects:
     """
     def __init__(self, SS_object_name:str):
         self.SS_object_name = SS_object_name
-        self.SS_object_name = SS_object_name
         self.param = {
             "source": {"symbol": "", "definition": "object url", "unit": "url", "value": None},
             "aphelion": {"symbol": "ad", "definition": "aphelion", "unit": "km", "value": None},
@@ -99,12 +102,9 @@ class SolarSystemObjects:
             "vol": {"symbol": "V", "definition": "volume", "unit": "m³", "value": None},
         }
 
-    async def get_ra_dec_from_common_name(self,object_name):
+    async def get_ra_dec_from_common_name(self):
         """
         This function is used to get the RA and DEC of an object using its common name
-
-        Arg:
-            - object_name (str): The name of the EPHEM object
         
         Returns:
             - ra_hms (str): The right ascension of the object in hours, minutes and seconds
@@ -112,8 +112,15 @@ class SolarSystemObjects:
             - ra_deg (float): The right ascension of the object in degrees
             - dec_deg (float): The declination of the object in degrees
             - constellation (str): Which constellation the object is currently in
+        
+        Example:
+        >>> venus=SolarSystemObjects("venus").get_ra_dec_from_common_name()
+        >>> print(venus)
+        ('3h 39m 30.0s', '22° 25\' 57.00"', 54.875, 22.4325, 'Taurus')
+        >>> venus
         """
-        obj = getattr(ephem, object_name.capitalize())()
+        
+        obj = getattr(ephem, self.SS_object_name.capitalize())()
         obj.compute()
         ra = ephem.hours(obj.ra)
         dec = ephem.degrees(obj.dec)
@@ -200,7 +207,7 @@ class SolarSystemObjects:
         #object_name=formatted_data['']
         #ra dec control 
         try:
-            ra_hms,dec_dms,ra_deg,dec_deg,constellation = await self.get_ra_dec_from_common_name(self.SS_object_name)
+            ra_hms,dec_dms,ra_deg,dec_deg,constellation = await self.get_ra_dec_from_common_name()
             formatted_data["ra_hms"] = {
                 "symbol": "ra",
                 "definition": "right ascension",
@@ -365,7 +372,7 @@ class DateCalculator:
 
         Usage:
         >>> astropy_time = DateCalculator().calculate_astropy_time('2023-01-01 12:00:00')
-    
+        
         """
         try:
             redate_object = parser.parse(date)
@@ -401,7 +408,7 @@ class DateCalculator:
         
 geolocator = Nominatim(user_agent="my-app", timeout=15)       
 
-async def get_observer_and_local_time(city: str):
+async def get_observer_and_local_time(city: str, date: str = None):
     location = geolocator.geocode(city, timeout=15)
     lat = location.latitude
     long = location.longitude
@@ -415,8 +422,13 @@ async def get_observer_and_local_time(city: str):
     observer = Observer(location=earth_location, name=city, timezone=timezone)
 
     # Get current local time at the location
-    local_time = datetime.now(timezone)
 
+    if date is not None:
+        date=str(date)
+        local_time = await DateCalculator().calculate_astropy_time(date)
+    else:
+        local_time = await DateCalculator().calculate_astropy_time(f"{datetime.utcnow()}")
+    local_time=local_time.to_datetime(timezone)
     return observer, local_time
 
 
@@ -754,6 +766,224 @@ async def calculate_weight_on_celestial_bodies(earth_weight, celestial_bodies):
             weight_on_bodies[body] = "Unknown celestial body"
     return weight_on_bodies
 
+
+#ZenithPlotManager is a class that manages zenith plots for multiple users. It can save zenith plots for a date range, create a GIF from saved plots, and more
+from moviepy.editor import ImageSequenceClip
+from PIL import Image
+from starplot import ZenithPlot
+from starplot.styles import PlotStyle, extensions,MarkerStyle,FillStyleEnum,LabelStyle,MarkerSymbolEnum
+class ZenithPlotManager:
+    """
+    A class that manages zenith plots for multiple users. It can save zenith plots for a date range, create a GIF from saved plots, and more.
+
+    Attributes:
+    - city (str): The name of the city for which the zenith plots are generated. DEFAULT IS ISTANBUL
+    - user_id (int): The ID of the user for whom the zenith plots are generated. DEFAULT IS 0
+
+    Methods:
+    - plot_style(): Returns the plot style for zenith plots.
+    - get_zenith_plot(date): Returns a zenith plot for the given date.
+    - save_plots_for_date_range(start_date, end_date): Saves zenith plots for a date range.
+    - create_mp4(fps): Creates a GIF from saved plots using ImageMagick.
+    """
+    def __init__(self, city="Istanbul", user_id=0):
+        self.city = city
+        self.user_id = user_id
+        self.base_path = f"denemeler/zenith_plot/{user_id}/"
+
+    async def plot_style(self):
+        style = PlotStyle().extend(extensions.BLUE_MEDIUM, extensions.MAP)
+        style.constellation.label.font_size = 11
+        style.constellation.line.width= 6
+        style.constellation.line.zorder = -1
+        style.star.label.font_family= "monospace"
+        style.star.label.font_size= 10
+        style.star.marker.size= 50
+        style.ecliptic.line.visible = True
+        
+        # DSO Configuration
+        dso_marker_style = MarkerStyle(
+            color="red",
+            symbol=MarkerSymbolEnum.TRIANGLE,
+            size=10,
+            fill=FillStyleEnum.FULL,
+            alpha=0.6,
+            visible=True,
+            zorder=-1,
+        )
+        dso_label_style = LabelStyle(
+            font_color="red",
+            font_size=11,
+            font_weight="normal",
+            font_family="cursive",
+            line_spacing=-1,
+            zorder=1,
+        )
+        style.dso.label = dso_label_style
+        style.dso.marker = dso_marker_style
+
+        # Planet Configuration
+        planet_marker_style = MarkerStyle(
+            color="#C0AD00",
+            symbol=MarkerSymbolEnum.CIRCLE,
+            size=6,
+            fill=FillStyleEnum.FULL,
+            alpha=0.8,
+            visible=True,
+            zorder=-1,
+        )
+        planet_label_style = LabelStyle(
+            font_color="#C0AD00",
+            font_size=10,
+            font_weight="bold",
+            font_family="sans-serif",
+            line_spacing=1.0,
+            zorder=1,
+        )
+        style.planets.label = planet_label_style
+        style.planets.marker = planet_marker_style
+
+        style 
+        # Moon Configuration
+        style.moon.marker.visible = True
+        return style
+
+    async def get_zenith_plot(self, date: str):
+        """Returns a zenith plot for the given date.
+        Args:
+        - date (datetime): The date for which the zenith plot is generated.
+
+        Returns:
+        - ZenithPlot: A zenith plot object.
+        """
+        observer, localtime = await get_observer_and_local_time(self.city, date)
+        style = await self.plot_style()
+        p = ZenithPlot(lat=observer.latitude.degree, lon=observer.longitude.degree,
+                       dt=localtime, limiting_magnitude=5, style=style,
+                       adjust_text=False, include_info_text=True, ephemeris="de440.bsp",resolution=6096,rasterize_stars=False,hide_colliding_labels=False)
+        return p
+
+    async def save_plots_for_date_range(self, start_date: datetime, end_date: datetime):
+        """Save plots for a given range of dates
+        Args:
+        - start_date (datetime): The start date of the range.
+        - end_date (datetime): The end date of the range.
+
+        Returns:
+        - str: A success message if the plots are saved successfully.
+        """
+        # Create the directory if it doesn't exist already
+        os.makedirs(self.base_path, exist_ok=True)
+
+        # Clear all png files in the directory
+        [os.remove(os.path.join(self.base_path, file)) for file in os.listdir(self.base_path) if file.endswith(".png")]
+
+        # Determine the gap between plot generations based on the date range
+        date_difference = (end_date - start_date).days + 1  # Including both start and end date
+
+        # Define gap days based on the date difference
+        if date_difference <= 1:
+            gap_days = 1 / (24*30)  # Generate plot every 30 minutes for less than 2 days
+        elif date_difference <= 5:
+            gap_days = 1 / 6  # Generate plot every 2 hours for up to 5 days
+        elif date_difference <= 60:
+            gap_days = 2  # Daily for up to 2 months
+        elif date_difference <= 365 * 2:
+            gap_days = 30  # Every two weeks for up to 2 years
+        elif date_difference <= 365 * 5:
+            gap_days =60  # Monthly for up to 5 years
+        else:
+            # If the range is beyond 5 years, consider adjusting your strategy or notifying the user
+            output_text_fail = (
+                "\n## Türkçe 🇹🇷 :\nTarih aralığı çok uzun. Lütfen aralığı daraltın. 🛑\n\n"
+                "## English 🏴:\nThe date range is too long. Please consider narrowing down the range. 🛑"
+            )
+            return output_text_fail # Optionally, adjust this part based on your application's needs
+
+        tasks = []
+        current_date = start_date
+        while current_date <= end_date:
+            tasks.append(self.get_zenith_plot(current_date))
+            current_date += timedelta(days=gap_days)
+
+        # Execute all tasks concurrently
+        for i, plot in enumerate(await asyncio.gather(*tasks)):
+            plot_date = start_date + timedelta(days=gap_days * i)
+            filename = f"{self.base_path}{plot_date.strftime('%Y-%m-%d_%H-%M')}_{self.city}_zenithPlot.png"
+            # Assuming `plot` has an export method
+            plot.export(filename)
+        output_text_sucess=f"""\n## Türkçe 🇹🇷 :\nGökyüzü yolculuğunuz kayıt altına alındı! 🌠 `{start_date.strftime('%Y-%m-%d %H:%M:%S')}` ile `{end_date.strftime('%Y-%m-%d %H:%M:%S')}` arasındaki yıldızlararası haritalar, kozmik kütüphanemizin en gizli köşesinde saklanıyor. 📚✨ Ancak evrenin esrarengiz dengesi gereği, bu kıymetli bilgiler 24 saat sonra yıldız tozuna dönüşecek. ⏳🚀\n\n## English 🏴:\nYour celestial voyage has been etched in the cosmos! 🌠 The interstellar maps between `{start_date.strftime('%Y-%m-%d %H:%M:%S')}` and `{end_date.strftime('%Y-%m-%d %H:%M:%S')}` are now tucked away in the most secretive corner of our cosmic library. 📚✨ But beware, due to the enigmatic balance of the universe, this precious data will transform into stardust after 24 hours. ⏳🚀"""
+        return output_text_sucess
+    
+    #zip file with all plots
+    async def create_zip(self):
+        """Create a ZIP file containing all the optimized saved plots"""
+        zip_path = f"{self.base_path}zenith_plots.zip"
+        
+        with ZipFile(zip_path, 'w', ZIP_DEFLATED) as zipf:
+            for file in os.listdir(self.base_path):
+                if file.endswith(".png"):
+                    file_path = os.path.join(self.base_path, file)
+                    # Compress and optionally resize the image before adding to ZIP
+                    optimized_path = await self.optimize_and_compress_image(file_path)
+                    zipf.write(optimized_path, file)
+                    # Optionally, remove the temporary optimized file if you created one
+                    os.remove(optimized_path)
+
+        output_text_success = ("Your celestial journey has been archived in a cosmic ZIP file! 🌌📚 "
+                               "But remember, like the stars, it's not permanent. **In 24 hours**, "
+                               "it will be drifting into **a black hole** deep in the universe. 🚮")
+        return output_text_success, zip_path
+    
+    async def optimize_and_compress_image(self, image_path):
+        """Optimize and compress an image for ZIP storage."""
+        # Use a temporary file to avoid altering the original
+        temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".png")
+        try:
+            with Image.open(image_path) as img:
+                # Optional: resize the image - img = img.resize((new_width, new_height), Image.ANTIALIAS)
+                img.save(temp_file.name, format='PNG', optimize=True)
+            return temp_file.name
+        finally:
+            temp_file.close()
+
+    async def create_mp4(self,fps: int = 5):
+        """Create a GIF from saved plots using ImageMagick"""
+        video_path = f"{self.base_path}sky_plot.mp4"
+        if os.path.exists(video_path):
+            os.remove(video_path)
+        # List all image files in the directory
+        imgs = [os.path.join(self.base_path, img) for img in os.listdir(self.base_path) if img.endswith(('.png', '.jpg', '.jpeg'))]
+        imgs.sort()  # Ensure the images are sorted if necessary
+
+        # Create video clip from images
+        clip = ImageSequenceClip(imgs, fps=fps)
+
+        # Write the video file
+        clip.write_videofile(video_path, codec='libx264', audio=False)
+        #user return notification
+        output_text_sucess=f"Keeping up with the rhythm of the universe, your video 🎥 glows in the stardust! But this glow is not permanent, **in 24 hours** it will be caught in the mysterious gravitational pull of **a black hole**. 🚮"
+        return output_text_sucess,video_path
+    async def create_gif(self):
+        # If exists, remove the existing GIF file
+        gif_path = f"{self.base_path}sky_plot.gif"
+        if os.path.exists(gif_path):
+            os.remove(gif_path)
+        # Create the frames, filtering for appropriate file extensions and sorting by modification date
+        imgs = [os.path.join(self.base_path, img) for img in os.listdir(self.base_path) if img.endswith(('.png', '.jpg', '.jpeg'))]
+        imgs.sort(key=lambda x: os.path.getmtime(x))  # Sort files by modification time
+        
+        frames = [Image.open(img) for img in imgs]
+        
+        # Save into a GIF file that loops forever
+
+        frames[0].save(gif_path, format='GIF',
+                        append_images=frames[1:],
+                        save_all=True,
+                        duration=300, loop=0)
+        #user return notification
+        output_text_sucess=f"The GIF capturing the dance of the sky is as bright as the stars! But remember, like starlight, it's temporary. **In 24 hours**, it will be drifting into **a black hole** deep in the universe.🚮"
+        return output_text_sucess,gif_path
 #tests __main__
 """
 if __name__ == "__main__":

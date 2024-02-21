@@ -17,6 +17,7 @@ from random import randrange
 from requests import get
 from bs4 import BeautifulSoup
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
 from time import mktime, strftime
 sys.path.append('')
 from astropy.time import Time
@@ -25,7 +26,7 @@ from src.Astro_files import queryFunctions as qf
 import database.local_save
 import discord
 from discord import app_commands
-from discord.ui import Button,View
+from discord.ui import Button,View,Modal,TextInput
 Logger = logger.CustomLogger('astrobot', 'src/log_files/async_discord.log')
 
 
@@ -230,7 +231,9 @@ async def object_info_from_file(interaction: discord.Interaction, file: discord.
 
 
 async def serverinfo(interaction: discord.Interaction,client):
-  await interaction.response.defer(thinking=True)
+  if interaction.response.is_done() == False:
+      asyncio.sleep(2)
+  await interaction.response.defer()
   guild = interaction.guild
   online = sum(m.status != discord.Status.offline for m in guild.members)
 
@@ -618,28 +621,241 @@ class NewsManager:
             writer.writeheader()
             writer.writerows(output_rows)
 
-    async def send_daily_links(self, thread):
-        """
-        Sends a set of predefined links with descriptions to the specified thread.
-        """
-        links_with_descriptions = [
-            ("# The Sun Now \nThe Sun's outer atmosphere, including hot flare plasma, with bright regions for active areas and dark areas known as coronal holes, which are key sources of solar wind particles.\n**Where:** Corona and hot flare plasma\n**Wavelength:** Extreme Ultraviolet\n","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0193.jpg"),
-            ("## Solar Coronas and Magnetic Loops\nCoronal loops, which are arcs extending off the Sun where plasma moves along magnetic field lines. The brightest spots indicate exceptionally strong magnetic fields near the Sun's surface.\n**Where:** Quiet corona and upper transition region\n**Wavelength:** Extreme Ultraviolet (171 angstroms)\n**Primary ions seen:** 8 times ionized iron (Fe IX)\n**Characteristic temperature:** 1 million K (1.8 million F)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0171.jpg"),
-            ("## Solar Flares and Active Regions\nShowing areas where cooler dense plumes of plasma (filaments and prominences) are located above the visible surface of the Sun. Many of these features either can't be seen or appear as dark lines in the other channels.\n**Where:** Chromosphere (the active areas above the Sun's surface)\n**Wavelength:** Extreme Ultraviolet (304 angstroms)\n**Primary ions seen:** 2 times ionized helium (He II)\n**Characteristic temperature:** 60,000 K (107,540 F)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0304.jpg"),
-            ("## Solar Active Regions and Sunspots\nSunspots, which are cooler, darker areas on the Sun created by strong magnetic fields. They are often the source of solar flares and coronal mass ejections.\n**Where:** Photosphere (the visible surface of the Sun)\n**Wavelength:** Visible light\n**Primary ions seen:** None (visible light)\n**Characteristic temperature:** 6,000 K (10,760 F)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_HMIIC.jpg"),
-            ("Each highlights a different part of the corona.","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_211193171.jpg"),
-            ("[Read information on colorized magnetograms.](https://sdo.gsfc.nasa.gov/assets/docs/HMI_M.ColorTable.pdf)","https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_HMIBC.jpg"),
-            ("## LYRA 3-Day Quicklook", "https://proba2.sidc.be/lyra/data/3DayQuicklook/LyraCalSWClatest.png"),
-            ("## Latest SWAP Movie", "https://proba2.sidc.be/swap/data/mpg/movies/latest_swap_movie.mp4"),
-            ("## Carrington Rotations - Latest Yellow Movie", "https://proba2.sidc.be/swap/data/mpg/movies/carrington_rotations/latest_cr_movie_yellow.mp4"),
-            ("## Latest SWAP Synoptic Map", "https://proba2.sidc.be/swap/data/SWAPsynopticMap/LatestSWAPsynopticMap.png"),
-            ("## Latest SWAP Polar Image with Edge\n", "http://proba2.oma.be/swap/data/polar_sun/SWAPpolarImageWithEdge/LatestSWAPpolarImageWithEdge.png"),
-        ]
 
-        for description, link in links_with_descriptions:
-            message = f"\n{description}\n{link}"
-            await thread.send(message) 
 
+
+
+
+############################################################################################################
+
+class CreationButtonsView(View):
+    def __init__(self, plot_manager: qf.ZenithPlotManager):
+        super().__init__(timeout=1800)  # Timeout for button interaction (in seconds)
+        self.plot_manager = plot_manager
+
+    @discord.ui.button(label='Create MP4', style=discord.ButtonStyle.blurple, emoji='🎥')
+    async def create_mp4_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.defer()
+        #bu özelliğimiz test aşamasındadır mesajını gönder
+        await interaction.followup.send("This feature is currently in testing. Maybe you'll be able to use it soon, or maybe in another universe.", ephemeral=True)
+
+        #success_message,video_path = await self.plot_manager.create_mp4()
+        #video_file = discord.File(video_path, filename="zenith_plot.mp4")
+        #await interaction.followup.send(success_message,file=video_file)
+
+    @discord.ui.button(label='Create GIF', style=discord.ButtonStyle.green, emoji='🌌')
+    async def create_gif_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.defer()
+        #waitng massage 
+        waitn_msg=await interaction.followup.send("Creating the GIF... This may take a while.", ephemeral=True)
+        await waitn_msg.delete()
+        success_message,gif_path = await self.plot_manager.create_gif()
+        gif_file = discord.File(gif_path, filename="zenith_plot.gif")
+        await interaction.followup.send(success_message, file=gif_file)
+
+    #zip file buton 
+    @discord.ui.button(label='Create ZIP', style=discord.ButtonStyle.red, emoji='📦')
+    async def create_zip_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.defer()
+        #waitn msg
+        waitn_msg=await interaction.followup.send("Creating the ZIP file... This may take a while.", ephemeral=True)
+        await waitn_msg.delete()
+        success_message,zip_path = await self.plot_manager.create_zip()
+        zip_file = discord.File(zip_path, filename="zenith_plots.zip")
+        await interaction.followup.send(success_message, file=zip_file)
+
+
+class DateRangeModal(Modal):
+    def __init__(self):
+        super().__init__(title="Enter Date Range")
+        self.add_item(TextInput(
+            label="Start Date",
+            placeholder="YYYY-MM-DD h:m:s",
+            style=discord.TextStyle.short,
+            required=True
+        ))
+        self.add_item(TextInput(
+            label="End Date",
+            placeholder="YYYY-MM-DD h:m:s",
+            style=discord.TextStyle.short,
+            required=True
+        ))
+
+    async def on_submit(self, interaction: discord.Interaction):
+        start_date_str = self.children[0].value
+        end_date_str = self.children[1].value
+
+        try:
+            await interaction.response.defer()
+            start_date = datetime.strptime(start_date_str, '%Y-%m-%d %H:%M:%S')
+            end_date = datetime.strptime(end_date_str, '%Y-%m-%d %H:%M:%S')
+
+            # Send a waiting message asynchronously
+            await interaction.followup.send(
+                "## Türkçe 🇹🇷:\n"
+                "Yıldız tozları arasından grafiklerinizi topluyoruz... Hazır olunca sizi çağıracağız! 🚀\n\n"
+                "## English 🏴:\n"
+                "Gathering your charts from the stardust... We'll summon you once ready! 🛸",
+                ephemeral=True
+            )
+
+            # Assuming plot generation and saving are asynchronous and can be parallelized
+            plot_manager = qf.ZenithPlotManager(user_id=interaction.user.id)
+            # Here, modify `save_plots_for_date_range` to be async and possibly break down into smaller async tasks if applicable
+
+            success_message = await plot_manager.save_plots_for_date_range(start_date, end_date)
+
+            saves_view = CreationButtonsView(plot_manager)
+            await interaction.followup.send(interaction.user.mention + success_message, view=saves_view)
+
+        except ValueError:
+            await interaction.followup.send("Incorrect date format. Please use YYYY-MM-DD HH:MM:SS.", ephemeral=True)
+
+class DateRangeButton(Button):
+    def __init__(self, label: str, modal: Modal):
+        super().__init__(style=discord.ButtonStyle.primary, label=label)
+        self.modal = modal
+
+    async def callback(self, interaction: discord.Interaction):
+        await interaction.response.send_modal(self.modal)
+
+class ZenithPlotView(View):
+    def __init__(self):
+        super().__init__(timeout=18000)
+        self.add_item(DateRangeButton('Enter a date range!', DateRangeModal()))
+
+
+#zenith plot async function
+async def zenith_plot(interaction:discord.Interaction,city: str, date: str):
+    #defer
+    await interaction.response.defer()
+        # Define a task for fetching the Zenith Plot
+    async def fetch_zenith_plot(city, date):
+        return await qf.ZenithPlotManager(city).get_zenith_plot(date)
+    
+    # Start fetching the zenith plot asynchronously
+    fetch_plot_task = asyncio.create_task(fetch_zenith_plot(city, date))
+
+    # Wait for all asynchronous operations to complete
+    results = await asyncio.gather(fetch_plot_task)
+
+    # Unpack the results
+    p = results[0]
+
+    # Bellekte bir PNG dosyası oluştur
+    with BytesIO() as image_binary:
+        p.export(image_binary, format='PNG') # p'nin export metodu BytesIO nesnesini kabul etmeli ve formatı belirtmeli
+        image_binary.seek(0) 
+        discord_file = discord.File(fp=image_binary, filename=f"{city}_zenith_plot.png")
+        # Embed oluştur
+        embed = discord.Embed(
+                title=f"Zenith Plot for {city}",
+                description=f"Here's the zenith plot for {city} on {date}. This chart provides a visual representation of the celestial object's zenith position, allowing you to observe astronomical events.",
+                colour=discord.Colour.purple()  # Mor renk ekleniyor
+                )
+        embed.set_image(url=f"attachment://{city}_zenith_plot.png")
+        
+        #clear buffer 
+        #send
+        view = ZenithPlotView()  # Create the view with the date range button
+        await interaction.followup.send(embed=embed, file=discord_file, view=view)
+
+import aiohttp
+from bs4 import BeautifulSoup
+image_types = ["2048_0193", "2048_0171", "2048_0304", "2048_HMIIC", "2048_211193171", "2048_HMIBC", "2048_HMIB", "2048_1700"]
+async def get_latest_image_url(date: datetime) -> list:
+    """Get the URL of the latest image from a given date on SDO gsfc asynchronously.
+    Args:
+        date: The date for which to retrieve the latest image.
+    Returns:
+        A list of URLs for the latest images of specified types, or an empty list if no images are found.
+    """
+    base_url = "https://sdo.gsfc.nasa.gov/assets/img/browse/"
+    date_str = date.strftime('%Y/%m/%d')
+    directory_url = f"{base_url}{date_str}/"
+    
+    async with aiohttp.ClientSession() as session:
+        async with session.get(directory_url) as response:
+            content = await response.text()
+            soup = BeautifulSoup(content, 'html.parser')
+            links = soup.find_all('a')
+            
+            latest_images = []
+
+            for image_type in image_types:
+                image_links = [link.get('href') for link in links if image_type in link.get('href')]
+                if image_links:
+                    # Sort and take the latest image link of this type
+                    latest_image_link = sorted(image_links)[-1]
+                    latest_images.append(f"{directory_url}{latest_image_link}")
+
+            return latest_images
+
+async def send_daily_links(thread, date: datetime=datetime.utcnow()):
+    # Fetch the latest image URLs for the given date
+    
+    latest_image_urls = await get_latest_image_url(date)
+    
+    # Define descriptions for each image type
+    descriptions = {
+    "2048_0193": "# The Sun Now \nThe Sun's outer atmosphere, including hot flare plasma, with bright regions for active areas and dark areas known as coronal holes, which are key sources of solar wind particles.\n**Where:** Corona and hot flare plasma\n**Wavelength:** Extreme Ultraviolet\n",
+    "2048_0171": "## Solar Coronas and Magnetic Loops\nCoronal loops, which are arcs extending off the Sun where plasma moves along magnetic field lines. The brightest spots indicate exceptionally strong magnetic fields near the Sun's surface.\n**Where:** Quiet corona and upper transition region\n**Wavelength:** Extreme Ultraviolet (171 angstroms)\n**Primary ions seen:** 8 times ionized iron (Fe IX)\n**Characteristic temperature:** 1 million K (1.8 million F)",
+    "2048_0304": "## Solar Flares and Active Regions\nShowing areas where cooler dense plumes of plasma (filaments and prominences) are located above the visible surface of the Sun. Many of these features either can't be seen or appear as dark lines in the other channels.\n**Where:** Chromosphere (the active areas above the Sun's surface)\n**Wavelength:** Extreme Ultraviolet (304 angstroms)\n**Primary ions seen:** 2 times ionized helium (He II)\n**Characteristic temperature:** 60,000 K (107,540 F)",
+    "2048_HMIIC": "## Solar Active Regions and Sunspots\nSunspots, which are cooler, darker areas on the Sun created by strong magnetic fields. They are often the source of solar flares and coronal mass ejections.\n**Where:** Photosphere (the visible surface of the Sun)\n**Wavelength:** Visible light\n**Primary ions seen:** None (visible light)\n**Characteristic temperature:** 6,000 K (10,760 F)",
+    "2048_211193171": "Each highlights a different part of the corona.",
+    "2048_HMIBC": "[Read information on colorized magnetograms.](https://sdo.gsfc.nasa.gov/assets/docs/HMI_M.ColorTable.pdf)",
+    "2048_HMIB": "Placeholder description for 2048_HMIB image type.",
+    "2048_1700": "Placeholder description for 2048_1700 image type.",
+    }
+
+
+    # Replace links in links_with_descriptions with the latest ones
+    updated_links_with_descriptions = []
+    for image_url in latest_image_urls:
+        # Extract the image type from the URL
+        image_type = image_url.split('/')[-1].split('_')[2]  # Adjust this indexing based on actual URL format
+        description = descriptions.get(image_type, "Description not found.")
+        updated_links_with_descriptions.append((description, image_url))
+    
+    # Send the updated links with descriptions
+    for description, link in updated_links_with_descriptions:
+        message = f"\n{description}\n{link}"
+        await thread.send(message)
+async def send_daily_links2(thread, date: datetime):
+    """
+    Sends a set of predefined links with descriptions to the specified thread.
+    """
+    now = datetime.utcnow()
+    links_with_descriptions = [
+        ("# The Sun Now \nThe Sun's outer atmosphere, including hot flare plasma, with bright regions for active areas and dark areas known as coronal holes, which are key sources of solar wind particles.\n**Where:** Corona and hot flare plasma\n**Wavelength:** Extreme Ultraviolet\n",
+            "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0193.jpg"),
+        ("## Solar Coronas and Magnetic Loops\nCoronal loops, which are arcs extending off the Sun where plasma moves along magnetic field lines. The brightest spots indicate exceptionally strong magnetic fields near the Sun's surface.\n**Where:** Quiet corona and upper transition region\n**Wavelength:** Extreme Ultraviolet (171 angstroms)\n**Primary ions seen:** 8 times ionized iron (Fe IX)\n**Characteristic temperature:** 1 million K (1.8 million F)",
+            "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0171.jpg"),
+        ("## Solar Flares and Active Regions\nShowing areas where cooler dense plumes of plasma (filaments and prominences) are located above the visible surface of the Sun. Many of these features either can't be seen or appear as dark lines in the other channels.\n**Where:** Chromosphere (the active areas above the Sun's surface)\n**Wavelength:** Extreme Ultraviolet (304 angstroms)\n**Primary ions seen:** 2 times ionized helium (He II)\n**Characteristic temperature:** 60,000 K (107,540 F)",
+            "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_0304.jpg"),
+        ("## Solar Active Regions and Sunspots\nSunspots, which are cooler, darker areas on the Sun created by strong magnetic fields. They are often the source of solar flares and coronal mass ejections.\n**Where:** Photosphere (the visible surface of the Sun)\n**Wavelength:** Visible light\n**Primary ions seen:** None (visible light)\n**Characteristic temperature:** 6,000 K (10,760 F)",
+            "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_HMIIC.jpg"),
+        ("Each highlights a different part of the corona.",
+            "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_211193171.jpg"),
+        ("[Read information on colorized magnetograms.](https://sdo.gsfc.nasa.gov/assets/docs/HMI_M.ColorTable.pdf)",
+            "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_2048_HMIBC.jpg"),
+        ("## LYRA 3-Day Quicklook", 
+            "https://proba2.sidc.be/lyra/data/3DayQuicklook/LyraCalSWClatest.png"),
+        ("## Latest SWAP Movie", 
+            "https://proba2.sidc.be/swap/data/mpg/movies/latest_swap_movie.mp4"),
+        ("## Carrington Rotations - Latest Yellow Movie", 
+            "https://proba2.sidc.be/swap/data/mpg/movies/carrington_rotations/latest_cr_movie_yellow.mp4"),
+        ("## Latest SWAP Synoptic Map",
+            "https://proba2.sidc.be/swap/data/SWAPsynopticMap/LatestSWAPsynopticMap.png"),
+        ("## Latest SWAP Polar Image with Edge\n", 
+            "http://proba2.oma.be/swap/data/polar_sun/SWAPpolarImageWithEdge/LatestSWAPpolarImageWithEdge.png"),
+    ]
+
+    for description, link in links_with_descriptions:
+        message = f"\n{description}\n{link}"
+        await thread.send(message) 
+
+#
 #test for async 
 if __name__ == "__main__":
     import asyncio

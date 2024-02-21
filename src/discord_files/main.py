@@ -6,9 +6,6 @@ import matplotlib.pyplot as plt
 import pandas as pd 
 import asyncio
 import time
-import json
-import feedparser
-import aiohttp
 sys.path.append('')
 from datetime import datetime ,timezone,timedelta,time
 from src.log_files import logger
@@ -67,7 +64,7 @@ def call_set_activity(client):
 
 # Create loop for auto thread 
 auto_news_manager = database.local_save.CsvManager("database/csv/auto_news.csv")
-apod_time=time(hour=6, minute=0, second=0,tzinfo=timezone.utc)
+apod_time=time(hour=6, minute=51, second=0,tzinfo=timezone.utc)
 @tasks.loop(time=apod_time)
 async def send_autos(client):
     channel_infos = await auto_news_manager.read_channel_list()
@@ -119,7 +116,7 @@ async def send_per6_hours_news(client):
         Logger.error("No tasks to execute.")
 
 #send daily link    
-link_time= time(hour=10, minute=0, second=0,tzinfo=timezone.utc)
+link_time= time(hour=13, minute=50, second=0,tzinfo=timezone.utc)
 @tasks.loop(time=link_time)
 async def send_daily_link(client):
     """Send one news article per day"""
@@ -130,7 +127,7 @@ async def send_daily_link(client):
         thread = client.get_channel(int(thread_id))
         if thread and isinstance(thread, discord.Thread):
             # Create coroutine object and add to the tasks list
-            task = async_func.NewsManager.send_daily_links(self_news,thread=thread)
+            task = async_func.send_daily_links(thread=thread)
             links_tasks.append(task)
             # lOGGER INFO
             Logger.info(f'Sent daily links at {datetime.now()} on ThreadID: {thread_id} | ThreadName: {thread.name} | ServerID: {channel_info["server_id"]} | ServerName: {channel_info["server_name"]}')
@@ -153,8 +150,6 @@ async def on_ready():
         call_set_activity(client)
     except Exception as e:
         Logger.error(f"error syncing commands: {e}")
-
-
 
 
 @client.event
@@ -246,17 +241,19 @@ async def object_info_from_file(interaction: discord.Interaction, file: discord.
 @app_commands.describe(date="Date for APOD. Default: NOW. Accepts YYYY-MM-DD format or 'random'")
 async def apod(interaction: discord.Interaction, date: str = None):
   await async_func.apod_interaction(interaction,date)
+
+##### ZENITH PLOT  ##########################################
+@client.tree.command(name="zenith_plot", description="Plots the zenith of the celestial object")
+async def zenith_plot(interaction: discord.Interaction, city: str = "Istanbul", date: str = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"):
+  await async_func.zenith_plot(interaction,city,date)
 #####SERVER INFO  ###########################################
 @client.tree.command(name="serverinfo",
                      description="Sends information on the server")
 async def serverinfo(interaction: discord.Interaction):
   await async_func.serverinfo(interaction,client=client)
 
-
-
 ##### FUNNY  ###########################################
 import Levenshtein as lev
-
 def closest_match(input_str, possibilities):
     closest = None
     min_distance = float('inf')
@@ -291,5 +288,8 @@ async def on_slash_command_error(ctx, error):
   else:
     print(error)
 
-print(discord_token)
-client.run(discord_token)
+async def main():
+  await client.start(discord_token)
+
+
+asyncio.run(main())
