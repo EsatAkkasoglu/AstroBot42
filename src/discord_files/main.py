@@ -64,7 +64,7 @@ def call_set_activity(client):
 
 # Create loop for auto thread 
 auto_news_manager = database.local_save.CsvManager("database/csv/auto_news.csv")
-apod_time=time(hour=6, minute=51, second=0,tzinfo=timezone.utc)
+apod_time=time(hour=5, minute=51, second=0,tzinfo=timezone.utc)
 @tasks.loop(time=apod_time)
 async def send_autos(client):
     channel_infos = await auto_news_manager.read_channel_list()
@@ -105,7 +105,7 @@ async def send_per6_hours_news(client):
             news_tasks.append(task)
             news_tasks.append(task1)
             # lOGGER INFO
-            Logger.info(f'Sent news at {datetime.now()} on ThreadID: {thread_id} | ThreadName: {thread.name} | ServerID: {channel_info["server_id"]} | ServerName: {channel_info["server_name"]}')
+            Logger.info(f'Sent news at {datetime.utcnow()} on ThreadID: {thread_id} | ThreadName: {thread.name} | ServerID: {channel_info["server_id"]} | ServerName: {channel_info["server_name"]}')
         else:
             Logger.error(f"Thread with ID {thread_id} not found or not a thread.")
     
@@ -130,7 +130,7 @@ async def send_daily_link(client):
             task = async_func.send_daily_links(thread=thread)
             links_tasks.append(task)
             # lOGGER INFO
-            Logger.info(f'Sent daily links at {datetime.now()} on ThreadID: {thread_id} | ThreadName: {thread.name} | ServerID: {channel_info["server_id"]} | ServerName: {channel_info["server_name"]}')
+            Logger.info(f'Sent daily links at {datetime.utcnow()} on ThreadID: {thread_id} | ThreadName: {thread.name} | ServerID: {channel_info["server_id"]} | ServerName: {channel_info["server_name"]}')
         else:
             Logger.error(f"Thread with ID {thread_id} not found or not a thread.")
     if links_tasks:
@@ -244,7 +244,7 @@ async def apod(interaction: discord.Interaction, date: str = None):
 
 ##### ZENITH PLOT  ##########################################
 @client.tree.command(name="zenith_plot", description="Plots the zenith of the celestial object")
-async def zenith_plot(interaction: discord.Interaction, city: str = "Istanbul", date: str = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"):
+async def zenith_plot(interaction: discord.Interaction, city: str = "Istanbul", date: str = f"{datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}"):
   await async_func.zenith_plot(interaction,city,date)
 #####SERVER INFO  ###########################################
 @client.tree.command(name="serverinfo",

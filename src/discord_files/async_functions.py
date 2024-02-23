@@ -376,7 +376,7 @@ async def apod_dict(date: str = None):
     credits_list = [f'[{i.text}]({i["href"]})' for i in soup.find_all('center')[1].findChildren() if i.name == 'a' and i.text != 'Copyright']
     apod_data['credits'] = ', '.join(credits_list)
     # Create the embed
-    embed = discord.Embed(title=apod_data['title'], url=apod_data['url'], description=f"{apod_data['desc']}\nCredits: {apod_data['credits']}", color=discord.Color.orange(), timestamp=datetime.now())
+    embed = discord.Embed(title=apod_data['title'], url=apod_data['url'], description=f"{apod_data['desc']}\nCredits: {apod_data['credits']}", color=discord.Color.orange(), timestamp=datetime.utcnow())
     embed.set_footer(text=f"NASA-APOD", icon_url="https://gpm.nasa.gov/themes/pmm_bs/images/nasa-logo-large-v1.png")
         # Add image to the embed if it's not a video
     if not apod_data['video']:
@@ -423,7 +423,7 @@ async def create_apod_embed(embed, interaction:discord.Interaction):
         if not file_exists:
             open("database/csv/auto_news.csv", "w")
         # Ensure that the interaction type is a button press and user has manage_messages permissions
-        if interaction.type == discord.InteractionType.component and interaction.user.guild_permissions.manage_messages:
+        if interaction.type == discord.InteractionType.component and interaction.user.guild.owner:
             user = interaction.user
             guild = interaction.guild
             forum_channel_name = "news-📰"
@@ -648,9 +648,10 @@ class CreationButtonsView(View):
         await interaction.response.defer()
         #waitng massage 
         waitn_msg=await interaction.followup.send("Creating the GIF... This may take a while.", ephemeral=True)
-        await waitn_msg.delete()
+        
         success_message,gif_path = await self.plot_manager.create_gif()
         gif_file = discord.File(gif_path, filename="zenith_plot.gif")
+        await waitn_msg.delete()
         await interaction.followup.send(success_message, file=gif_file)
 
     #zip file buton 
@@ -659,9 +660,9 @@ class CreationButtonsView(View):
         await interaction.response.defer()
         #waitn msg
         waitn_msg=await interaction.followup.send("Creating the ZIP file... This may take a while.", ephemeral=True)
-        await waitn_msg.delete()
         success_message,zip_path = await self.plot_manager.create_zip()
         zip_file = discord.File(zip_path, filename="zenith_plots.zip")
+        await waitn_msg.delete()
         await interaction.followup.send(success_message, file=zip_file)
 
 
@@ -680,11 +681,18 @@ class DateRangeModal(Modal):
             style=discord.TextStyle.short,
             required=True
         ))
+        #city 
+        self.add_item(TextInput(
+            label="City",
+            placeholder="Istanbul, London, New York...",
+            style=discord.TextStyle.short,
+            required=True
+        ))
 
     async def on_submit(self, interaction: discord.Interaction):
         start_date_str = self.children[0].value
         end_date_str = self.children[1].value
-
+        city = self.children[2].value
         try:
             await interaction.response.defer()
             start_date = datetime.strptime(start_date_str, '%Y-%m-%d %H:%M:%S')
@@ -700,7 +708,7 @@ class DateRangeModal(Modal):
             )
 
             # Assuming plot generation and saving are asynchronous and can be parallelized
-            plot_manager = qf.ZenithPlotManager(user_id=interaction.user.id)
+            plot_manager = qf.ZenithPlotManager(city=city,user_id=interaction.user.id)
             # Here, modify `save_plots_for_date_range` to be async and possibly break down into smaller async tasks if applicable
 
             success_message = await plot_manager.save_plots_for_date_range(start_date, end_date)
@@ -727,30 +735,20 @@ class ZenithPlotView(View):
 
 #zenith plot async function
 async def zenith_plot(interaction:discord.Interaction,city: str, date: str):
-    #defer
+    # Inside your async function where you handle the interaction response
     await interaction.response.defer()
-        # Define a task for fetching the Zenith Plot
-    async def fetch_zenith_plot(city, date):
-        return await qf.ZenithPlotManager(city).get_zenith_plot(date)
-    
-    # Start fetching the zenith plot asynchronously
-    fetch_plot_task = asyncio.create_task(fetch_zenith_plot(city, date))
-
-    # Wait for all asynchronous operations to complete
-    results = await asyncio.gather(fetch_plot_task)
-
-    # Unpack the results
-    p = results[0]
-
-    # Bellekte bir PNG dosyası oluştur
+    p = await qf.ZenithPlotManager(city).get_zenith_plot(date,resolution=6000)
+    # Create an in-memory PNG file
     with BytesIO() as image_binary:
-        p.export(image_binary, format='PNG') # p'nin export metodu BytesIO nesnesini kabul etmeli ve formatı belirtmeli
-        image_binary.seek(0) 
+        # Ensure that p.export accepts a file-like object (BytesIO in this case) and specify the format as PNG
+        p.export(image_binary, format='PNG')
+        # Seek to the start of the BytesIO object to ensure it can be read from the beginning
+        image_binary.seek(0)
         discord_file = discord.File(fp=image_binary, filename=f"{city}_zenith_plot.png")
         # Embed oluştur
         embed = discord.Embed(
                 title=f"Zenith Plot for {city}",
-                description=f"Here's the zenith plot for {city} on {date}. This chart provides a visual representation of the celestial object's zenith position, allowing you to observe astronomical events.",
+                description=f"Here's the zenith plot for {city} on {date} (UTC).\nThis chart provides a visual representation of the celestial object's zenith position, allowing you to observe astronomical events.",
                 colour=discord.Colour.purple()  # Mor renk ekleniyor
                 )
         embed.set_image(url=f"attachment://{city}_zenith_plot.png")
@@ -813,7 +811,7 @@ async def send_daily_links(thread, date: datetime=datetime.utcnow()):
     updated_links_with_descriptions = []
     for image_url in latest_image_urls:
         # Extract the image type from the URL
-        image_type = image_url.split('/')[-1].split('_')[2]  # Adjust this indexing based on actual URL format
+        image_type = image_url.split('/')[-1].split('_')[2]+"_"+image_url.split('/')[-1].split('_')[3]  # Adjust this indexing based on actual URL format
         description = descriptions.get(image_type, "Description not found.")
         updated_links_with_descriptions.append((description, image_url))
     
