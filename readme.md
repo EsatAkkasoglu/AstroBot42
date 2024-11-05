@@ -73,6 +73,5 @@
 - Address reported issues and release updates.
 - Stay updated with Discord API changes.
 
----
 
-This roadmap is a general guideline and should be adapted to fit your project's specific needs and timeline. Prioritize testing, user experience, and documentation throughout the development process.
+
